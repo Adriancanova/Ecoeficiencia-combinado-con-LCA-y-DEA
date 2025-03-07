@@ -12,5 +12,5 @@ title-block-banner: true
 ---
 
 
-Ecoeficiencia
+**Ecoeficiencia**
 ---
