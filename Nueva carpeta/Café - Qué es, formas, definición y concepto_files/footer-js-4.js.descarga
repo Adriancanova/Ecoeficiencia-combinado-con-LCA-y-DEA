@@ -1,0 +1,306 @@
+(function(){
+
+    var doc = document.documentElement;
+    var w   = window;
+
+
+    var curScroll;
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curDirection = 0;
+    var prevDirection = 0;
+  
+    var lastY = 0;
+
+    var header = document.getElementById('stickyheader');
+    var toggled;
+    var downThreshold = 300;
+    var upThreshold = 100;
+
+
+    var checkScroll = function() {
+        curScroll = w.scrollY || doc.scrollTop;
+        if(curScroll > prevScroll) {
+            // scrolled down
+            curDirection = 2;
+        }
+        else {
+            //scrolled up
+            curDirection = 1;
+        }
+
+        if(curDirection !== prevDirection) {
+            toggled = toggleHeader();
+        } else {
+            lastY=curScroll
+        }
+
+        prevScroll = curScroll;
+        if(toggled) {
+            prevDirection = curDirection;
+        }
+    };
+
+    var toggleHeader = function() { 
+        toggled = true;
+        if(curDirection === 2 && (curScroll-lastY) > downThreshold) {
+            lastY=curScroll
+            header.classList.add('hide');
+        }
+        else if (curDirection === 1 && (lastY-curScroll) > upThreshold) {
+            lastY=curScroll
+            header.classList.remove('hide');
+        }
+        else {
+            toggled = false;
+        }
+        return toggled;
+    };
+
+    window.addEventListener('scroll', checkScroll);
+
+})();
+
+
+function openSearch() {
+  
+  document.getElementById("myOverlay").style.opacity = "1";
+  document.getElementById("myOverlay").style.visibility = "visible";
+  
+  var sbc = document.querySelector('.overlay #s'); 
+  
+  setTimeout(function(){ sbc.focus(); }, 500);
+  
+}
+
+function closeSearch() {
+  
+  document.getElementById("myOverlay").style.opacity = "0";
+  document.getElementById("myOverlay").style.visibility = "hidden";
+}
+
+
+window.addEventListener('DOMContentLoaded', function() {
+    
+    function loadReCAPTCHAScript() {
+        var script = document.createElement('script');
+        script.src = 'https://www.google.com/recaptcha/api.js';
+        document.head.appendChild(script);
+    }
+    
+    document.getElementById('email').addEventListener('click', function() {
+        if (!document.querySelector('script[src*="recaptcha/api.js"]')) {
+            loadReCAPTCHAScript();
+            // Add padding to container
+            document.querySelector('.email-semanal').style.paddingBottom = '90px';
+        }
+    });
+    
+   
+    
+    function fadeOut(element) {
+    element.style.opacity = 1;
+    (function fade() {
+      if ((element.style.opacity -= .1) < 0) {
+        element.style.display = "none";
+      } else {
+        requestAnimationFrame(fade);
+      }
+    })();
+  }
+
+  function fadeIn(element, display) {
+    element.style.opacity = 0;
+    element.style.display = display || "block";
+    (function fade() {
+      var val = parseFloat(element.style.opacity);
+      if (!((val += .1) > 1)) {
+        element.style.opacity = val;
+        requestAnimationFrame(fade);
+      }
+    })();
+  }
+
+  function toggleContent(buttonId, contentId, otherButtonId, otherContentId) {
+    var button = document.getElementById(buttonId);
+    var content = document.getElementById(contentId);
+    var otherButton = document.getElementById(otherButtonId);
+    var otherContent = document.getElementById(otherContentId);
+    
+    if (otherContent) { 
+        if (otherContent.style.display === "block" || parseFloat(otherContent.style.opacity) > 0) {
+          fadeOut(otherContent);
+        }
+    }
+
+    if (content) {
+        if (content.style.display === "none" || parseFloat(content.style.opacity) == 0) {
+          fadeIn(content, "block");
+        } else {
+          fadeOut(content);
+        }
+    }
+}
+
+
+
+var indiceTemas = document.getElementById('indice-temas');
+if (indiceTemas) {
+    indiceTemas.addEventListener('click', function() {
+        toggleContent('indice-temas', 'indice-content', 'resumen', 'listado-resumen');
+    });
+}
+
+var resumen = document.getElementById('resumen');
+if (resumen) {
+    resumen.addEventListener('click', function() {
+        var resumoContent = document.getElementById('listado-resumen');
+        if (resumoContent) { 
+            if (resumoContent.innerHTML.trim() === "") {
+                fetch('https://definicion.de/resumen.php?post_id=' + postId)
+                .then(response => response.text())
+                .then(data => {
+                    resumoContent.innerHTML = data;
+                    toggleContent('resumen', 'listado-resumen', 'indice-temas', 'indice-content');
+                })
+                .catch(error => {
+                    console.error('Error loading content:', error);
+                    resumoContent.innerHTML = "Error loading content.";
+                });
+            } else {
+                toggleContent('resumen', 'listado-resumen', 'indice-temas', 'indice-content');
+            }
+        }
+    });
+}
+
+   
+
+const observer2 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = 'slideBg 2.5s ease-in-out forwards';
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    // Select elements with the '.highlight' class
+    const elements = document.querySelectorAll('.highlight');
+
+    // Only proceed if there are elements to observe
+    if (elements.length > 0) {
+        elements.forEach(element => {
+            observer2.observe(element);
+        });
+    }
+
+const observer3 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = 'slideBg 2.5s ease-in-out forwards';
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    const elements2 = document.querySelectorAll('#pagination a');
+
+    // Only proceed if there are elements to observe
+    if (elements2.length > 0) {
+        elements2.forEach(element2 => {
+            observer3.observe(element2);
+        });
+    }
+    
+    
+    
+    
+    
+});
+
+
+
+var thumbUp = document.getElementById('thumbUp');
+if (thumbUp) {
+    thumbUp.addEventListener('click', function() {
+        updateFeedback(true, '¿Quieres decirnos algo más?');
+        document.getElementById('additionalComment').style.display = 'block';
+        document.getElementById('errorOptions').style.display = 'none';
+    });
+}
+
+var thumbDown = document.getElementById('thumbDown');
+if (thumbDown) {
+    thumbDown.addEventListener('click', function() {
+        updateFeedback(false, '¿Quieres decirnos qué podemos mejorar?');
+        document.getElementById('additionalComment').style.display = 'none';
+        document.getElementById('errorOptions').style.display = 'block';
+    });
+}
+
+function updateFeedback(isPositive, message) {
+    const paths = isPositive ? document.getElementById('thumbUp').getElementsByTagName('path') : document.getElementById('thumbDown').getElementsByTagName('path');
+    Array.from(paths).forEach(path => {
+        path.style.fill = isPositive ? '#6ed26e' : '#de5555';  // Verde para positivo, rojo para negativo
+    });
+
+    // Resetear el otro botón
+    const otherButton = isPositive ? 'thumbDown' : 'thumbUp';
+    Array.from(document.getElementById(otherButton).getElementsByTagName('path')).forEach(path => {
+        path.style.fill = ''; // Eliminar el relleno
+    });
+
+    //document.getElementById('feedbackMessage').innerText = '...'; // Mensaje de carga
+
+    // Enviar datos al servidor
+    fetch('https://definicion.de/fidbac.php', {
+        method: 'POST',
+        body: JSON.stringify({
+            postId: postId,  // Asumiendo que tienes el ID del post disponible
+            isPositive: isPositive,
+            noncefeedback: noncefeedback,
+            tipo: 'posneg'
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('thumbUp').style.display = 'none';
+        document.getElementById('thumbDown').style.display = 'none';
+        document.getElementById('feedbackMessage').innerText = 'Gracias por tu opinión. ' + message; // Actualizar mensaje con respuesta del servidor
+    });
+}
+
+function submitComment(isPositive) {
+    const comment = isPositive ? document.getElementById('commentText').value : document.getElementById('errorCommentText').value;
+    const hasErrors = document.getElementById('hasErrors').checked;
+    const notUseful = document.getElementById('notUseful').checked;
+
+    // Enviar datos al servidor
+    fetch('https://definicion.de/fidbac.php', {
+        method: 'POST',
+        body: JSON.stringify({
+            postId: postId,
+            comment: comment,
+            hasErrors: hasErrors,
+            notUseful: notUseful,
+            isPositive: isPositive,
+            noncefeedback: noncefeedback,
+            tipo: 'comment'
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('feedbackMessage').innerText = 'Gracias por tu comentario adicional.'; // Mensaje de agradecimiento
+        document.getElementById(isPositive ? 'additionalComment' : 'errorOptions').style.display = 'none'; // Ocultar elementos adicionales
+    });
+
+
+}

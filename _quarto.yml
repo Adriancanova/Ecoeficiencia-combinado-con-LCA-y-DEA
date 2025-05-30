@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Ecoeficiencia combinado con LCA y DEA"
+  title: "La Ecoeficiencia de México en una taza"
   navbar:
     right:
       - about.qmd

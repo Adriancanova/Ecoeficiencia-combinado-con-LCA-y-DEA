@@ -1,5 +1,5 @@
 ---
-title: "Ecoeficiencia combinado con LCA y DEA"
+title: "Ecoeficiencia en cafetales"
 listing:
   contents: posts
   sort: "date desc"

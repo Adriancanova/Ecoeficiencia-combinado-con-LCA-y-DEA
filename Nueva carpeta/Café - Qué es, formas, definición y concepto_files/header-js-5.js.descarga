@@ -1,0 +1,213 @@
+
+var loadingQueue = []; // Queue to manage loading sequence
+var allSlots = []; // This will hold all your slot definitions
+var processedAds = new Set(); // Track processed ads to prevent duplication
+
+function loadGPTScript() {
+    var gptScript = document.createElement('script');
+    gptScript.async = true;
+    gptScript.src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
+    document.head.appendChild(gptScript);
+
+    gptScript.onload = function() {
+        window.googletag = window.googletag || {cmd: []};
+        googletag.cmd.push(function() {
+            var slot1, slot2, slot3, slot32, slot4, slot5, slot6;
+      var interstitialSlot;
+            defineSlots();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.pubads().disableInitialLoad();
+            googletag.enableServices();
+            loadAndInitializeApstag(setupLazyLoad); // Delay setupLazyLoad until Apstag is ready
+        });
+        
+        setTimeout(function() {
+      googletag.cmd.push(function() {
+        googletag.display(interstitialSlot);
+        googletag.pubads().refresh([interstitialSlot]);
+      });
+    }, 5000);
+    
+    };
+}
+
+function defineSlots() {
+    
+      
+    var mapping2 = googletag.sizeMapping()
+                            .addSize([980, 0], [[300, 250], [336, 280], [970, 250], [970, 90], [728, 250], [728, 90]])
+                            .addSize([0, 0], [[300, 250], [336, 280]])
+                            .build();
+                            
+    var mapping3 = googletag.sizeMapping()
+                            .addSize([600, 0], [[300, 600], [336, 280], [300, 250],[160, 600],[120, 600]])
+                            .addSize([0, 0], [[300, 600], [300, 250]])
+                            .build();
+                            
+    var mapping4 = googletag.sizeMapping()
+                            .addSize([600, 0], [[336, 280], [300, 250]])
+                            .addSize([0, 0], [])
+                            .build();
+
+    slot1 = googletag.defineSlot('/22357687369/in_article_1', [[300,250],[336,280],[728,90],[970,250],[970, 90],[728, 250]], 'div-gpt-ad-1617904073287-0')
+             .defineSizeMapping(mapping2)
+             .addService(googletag.pubads());
+             allSlots.push(slot1);
+             
+    slot2 = googletag.defineSlot('/22357687369/in_article_2', [[300,250],[336,280],[728,90],[970,250],[970, 90],[728, 250]], 'div-gpt-ad-1617904538091-0')
+             .defineSizeMapping(mapping2)
+             .setTargeting('test', 'lazyload')
+             .addService(googletag.pubads());
+             allSlots.push(slot2);
+        
+        slot3 = googletag.defineSlot('/22357687369/Sidebar', [[300, 600],[336, 280],[300, 250],[160, 600],[120, 600]], 'div-gpt-ad-1617904610399-0')
+             .defineSizeMapping(mapping3)
+             .setTargeting('test', 'lazyload')
+             .addService(googletag.pubads());
+             allSlots.push(slot3);
+             
+        slot32 = googletag.defineSlot('/22357687369/definicion_pre_sidebar', [[336, 280],[300, 250]], 'div-gpt-ad-1617904610399-2')
+             .defineSizeMapping(mapping4)
+             .setTargeting('test', 'lazyload')
+             .addService(googletag.pubads());
+             allSlots.push(slot32);
+             
+    slot4 = googletag.defineSlot('/22357687369/In_Article_(3)', [[300,250],[336,280],[728,90],[970,250],[970, 90],[728, 250]], 'div-gpt-ad-1617904572117-0')
+             .defineSizeMapping(mapping2)
+             .setTargeting('test', 'lazyload')
+             .addService(googletag.pubads());
+             allSlots.push(slot4);
+             
+    slot5 = googletag.defineSlot('/22357687369/Definicion_1x1', [1, 1], 'div-gpt-ad-1617904500701-0').setTargeting('test', 'lazyload').addService(googletag.pubads());
+    allSlots.push(slot5);
+    
+    slot6 = googletag.defineSlot('/22357687369/definicion_lo', [1, 1], 'div-gpt-ad-1617904658293-0').setTargeting('test', 'lazyload').addService(googletag.pubads());
+    allSlots.push(slot6);
+        
+        interstitialSlot = googletag.defineOutOfPageSlot('/22357687369/definicion_interstitial',googletag.enums.OutOfPageFormat.INTERSTITIAL);
+
+          if (interstitialSlot) {
+            interstitialSlot.addService(googletag.pubads());
+        }
+}
+
+function loadAndInitializeApstag(callback) {
+    if (window.apstagLoaded) return;
+    var apstagScript = document.createElement('script');
+    apstagScript.async = true;
+    apstagScript.src = '//c.amazon-adsystem.com/aax2/apstag.js';
+    document.head.appendChild(apstagScript);
+
+    apstagScript.onload = function() {
+        window.apstag = window.apstag || { init() {}, fetchBids() {}, setDisplayBids() {} };
+        apstag.init({
+            pubID: '0ecc6256-b6a0-4de2-bdd6-cdd7eda25aee',
+            adServer: 'googletag',
+            bidTimeout: 2000,
+        });
+        window.apstagLoaded = true;
+        if (callback) callback();
+    };
+}
+
+
+function setupLazyLoad() {
+    var slots = [slot1, slot2, slot3, slot32, slot4, slot5, slot6]; // Define slots in the order they should ideally load
+    var currentlyProcessing = false;
+
+    slots.forEach(function(slot, index) {
+        var divId = slot.getSlotElementId();
+        var divElement = document.getElementById(divId);
+
+        if (divElement) { // Check if the div exists before setting up the observer
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting && !loadingQueue.includes(divId) && !processedAds.has(divId)) {
+                        if (!currentlyProcessing) {
+                            currentlyProcessing = true; // Set lock
+                            processedAds.add(divId);
+                            loadingQueue.push(divId); // Add to queue to manage sequential loading
+                            processLoadingQueue();
+                            currentlyProcessing = false; // Release lock
+                        }
+                    }
+                });
+            }, {
+                rootMargin: '125% 0px',
+                threshold: [0]
+            });
+            observer.observe(divElement);
+        }
+    });
+}
+
+
+
+
+function processLoadingQueue() {
+    if (loadingQueue.length === 0) return;
+    var slotIdToLoad = loadingQueue[0]; // Peek at the next slot to load
+    var slot = findSlotById(slotIdToLoad); // Implement this function based on your slot management
+
+    fetchBidsAndDisplayAd(slot, function() {
+        // Callback after ad is displayed
+        loadingQueue.shift(); // Remove the processed slot from the queue
+        if (loadingQueue.length > 0) {
+            processLoadingQueue(); // Process next item in the queue
+        }
+        
+    });
+}
+
+function findSlotById(divId) {
+    return allSlots.find(slot => slot.getSlotElementId() === divId);
+}
+
+function fetchBidsAndDisplayAd(slot, callback) {
+    if (!window.apstagLoaded) {
+        loadAndInitializeApstag(function() {
+            triggerBidRequest(slot, callback);
+        });
+    } else {
+        triggerBidRequest(slot, callback);
+    }
+    
+    callback();
+    
+}
+
+function triggerBidRequest(slot, callback) {
+    var sizes = slot.getSizes().map(function(size) {
+        return [size.width, size.height];
+    });
+
+    apstag.fetchBids({
+        slots: [{
+            slotID: slot.getSlotElementId(),
+            slotName: slot.getAdUnitPath(),
+            sizes: sizes
+        }],
+    }, function(bids) {
+        apstag.setDisplayBids();
+        googletag.cmd.push(function() {
+            googletag.display(slot.getSlotElementId());
+            googletag.pubads().refresh([slot]);
+            if (typeof callback === 'function') callback();
+        });
+    });
+}
+
+// Detect device type to decide when to load the GPT library
+  if (window.innerWidth > 768) {
+    // Load immediately for desktop
+    loadGPTScript();
+  } else {
+    // Load on first scroll for mobile
+    let scriptLoaded = false;
+    window.addEventListener('scroll', function() {
+      if (!scriptLoaded) {
+        loadGPTScript();
+        scriptLoaded = true;
+      }
+    }, {once: true, passive: true});
+  }

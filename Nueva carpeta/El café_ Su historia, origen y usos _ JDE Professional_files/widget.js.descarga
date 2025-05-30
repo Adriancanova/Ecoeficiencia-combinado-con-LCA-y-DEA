@@ -1,0 +1,564 @@
+var PRODUCT_ID = 'webot';
+var WEBOT_PLUGIN_VERSION =  '1.0.0'
+var AVATAR_BOTTOM_PX = '30px'
+var AVATAR_RIGHT_PX = '20px'
+
+var AVATAR_WIDTH_PX = '120px'
+var AVATAR_HEIGHT_PX = '100px'
+
+
+var WIDGET_OPENED_WIDTH = '470px'
+var WIDGET_OPENED_HEIGHT = '85%'
+
+var wbCustomElements = {
+    iframe: {
+        id: 'webot-widget-iframe',
+        styleSheetId: 'webot-style-sheet',
+    },
+    imageModal: {
+        id: 'wb-fullscreen-image-modal',
+        styleSheetId: 'wb-fullscreen-image-modal-style-sheet',
+    },
+};
+
+
+
+// iframe class
+var wbCustomIframe = function(webotSettings){
+	//console.log('wbCustomIframe')
+
+	let local_AVATAR_RIGHT_PX = AVATAR_RIGHT_PX
+	if(webotSettings.position && (webotSettings.position === 'bottom-right-1' || webotSettings.position === 'bottom-left-1') ){
+	    local_AVATAR_RIGHT_PX = '20px'
+	}
+	if(webotSettings.position && (webotSettings.position === 'bottom-right-2' || webotSettings.position === 'bottom-left-2') ){
+	    local_AVATAR_RIGHT_PX = '140px'
+	}	
+    if(webotSettings.position && (webotSettings.position === 'bottom-right-3' || webotSettings.position === 'bottom-left-3') ){
+       	local_AVATAR_RIGHT_PX = '260px'
+    }
+
+
+	let customVariables = ''
+	if(webotSettings.horizontalMargin){
+		if (webotSettings.position.indexOf('bottom-left') !== -1){
+			customVariables += 'margin-left:'+ webotSettings.horizontalMargin +';'
+		}else{
+			 customVariables += 'margin-right:'+ webotSettings.horizontalMargin +';'
+		}
+	}
+
+    if(webotSettings.verticalMargin){
+	    customVariables += 'margin-bottom:'+ webotSettings.verticalMargin +';'
+    }
+
+	if (webotSettings.position.indexOf('bottom-left') !== -1){
+		customVariables += 'left:'+ local_AVATAR_RIGHT_PX +';'
+	}else{
+		customVariables += 'right:'+ local_AVATAR_RIGHT_PX +';'
+	}
+
+	return '.webot-custom-iframe-'+ webotSettings.botId +' { ' +
+    '   max-height: calc(100% - 30px)!important;' +
+    '   border: none;' +
+    '   position: fixed;' +
+    '   z-index: 999999999999999;' +
+    '   bottom: '+ AVATAR_BOTTOM_PX +';' +
+//    '   right: '+ local_AVATAR_RIGHT_PX +';' +
+    '   height: '+ AVATAR_WIDTH_PX +';' +
+    '   width: '+ AVATAR_HEIGHT_PX +';' +
+    '   transition: unset;'+
+    '   color-scheme: light; border-radius:100%;'+
+    ' max-height: calc(100% - 30px)!important; ' +
+    'border: none;' +
+    'position: fixed;' +
+    'z-index: 2243000;' +
+    'bottom: '+AVATAR_BOTTOM_PX+';' +
+//    'right: '+ local_AVATAR_RIGHT_PX +';' +
+    'height: '+ AVATAR_HEIGHT_PX +';' +
+    'width: '+AVATAR_WIDTH_PX+';' +
+    'transition: unset;' +
+    'color-scheme: light;' +
+    'border-radius: 100%;' +
+    'border-bottom-right-radius: 0px !important;' +
+    'border-bottom-left-radius: 0px !important;' +
+	customVariables + 
+    '} \n ' +
+    '.webot-custom-iframe.align-left { ' +
+    '   left: 20px;' +
+    '   right: 0px;' +
+    '} \n ' +
+    '.webot-custom-iframe.chat-popup-widget-horizontal { ' +
+    '   width: 445px;' +
+    '   height: 80px;' +
+    '} \n' +
+    '.webot-custom-iframe.chat-popup-widget-vertical { ' +
+    '   width: 415px;' +
+    '   height: 153px;' +
+    '} \n' +
+    '.webot-custom-iframe.chat-popup-widget-actionable { ' +
+    '   width: 415px;' +
+    '   height: 300px;' +
+    '} \n' +
+    '.webot-custom-iframe.chat-popup-widget-horizontal { ' +
+    '   width: 100%;' +
+    '} \n' +
+    '.webot-custom-iframe.chat-popup-widget-actionable { ' +
+    'width: 100%;' +
+    'height: 300px;' +
+    '} \n' +
+    '.webot-custom-iframe.chat-popup-widget-container--horizontal { ' +
+    'width: 100%;' +
+    '.minimized-widget {' + 
+    '	border-radius:12px !important;' + 
+    '	border-bottom-right-radius: 0px !important; ' +
+	'} ' +
+    '} \n' +
+    '};'
+}
+
+isV1Script() ? injectLibraries() : appendIframe();
+
+window.openWebotChatBox = function(botId){
+	console.log("window.openWebotChatBox")
+	console.log(botId)
+	let webotWidgetIframe = document.querySelector('#webot-widget-iframe-'+ botId);
+    webotWidgetIframe.style.borderRadius = "0px";
+    webotWidgetIframe.style.height = WIDGET_OPENED_HEIGHT;
+    webotWidgetIframe.style.width = WIDGET_OPENED_WIDTH;
+	webotWidgetIframe.style.boxShadow = "rgba(0, 0, 0, 0.1) 0px 10px 50px";
+
+	//webotWidgetIframe.style.borderBottomLeftRadius = '10px'
+    //webotWidgetIframe.style.borderBottomRightRadius = '10px'
+    webotWidgetIframe.style.borderTopLeftRadius = '10px'
+    webotWidgetIframe.style.borderTopRightRadius = '10px'
+	webotWidgetIframe.style.zIndex = '999999999999999 !important'
+
+	if ("ontouchstart" in document.documentElement){
+		webotWidgetIframe.style.borderBottomLeftRadius = '10px'
+		webotWidgetIframe.style.position =  "fixed"
+    	webotWidgetIframe.style.top =  "10px"
+    	webotWidgetIframe.style.left =  "10px"
+    	webotWidgetIframe.style.width = "95%"
+    	webotWidgetIframe.style.height = "98%"
+	}
+
+    let webotIframe = document.querySelector('#webot-widget-iframe-'+ botId);
+    var iframeDocument =
+        webotIframe.contentDocument ||
+        webotIframe.contentWindow.document;
+    iframeDocument.querySelector('#avatarImage').style.display = 'none' ;
+
+
+	var webotAvatarA = iframeDocument.querySelector("a.webot-avatar");
+	if(webotAvatarA){
+		webotAvatarA.style.display = "none"
+	}
+}
+
+window.closeWebotChatBox = function(botId){
+    let webotIframe = document.querySelector('#webot-widget-iframe-'+ botId);
+
+    webotIframe.style.height = AVATAR_HEIGHT_PX;
+    webotIframe.style.width = AVATAR_WIDTH_PX;
+    // webotIframe.style.boxShadow = "rgba(0, 0, 0, 0.1) 0px 10px 50px";
+	webotIframe.style.boxShadow = "none";
+	webotIframe.style.borderRadius = "100px";
+
+    if ("ontouchstart" in document.documentElement){
+		webotIframe.style.removeProperty('top')
+		webotIframe.style.removeProperty('left')
+	}
+
+    var iframeDocument =
+        webotIframe.contentDocument ||
+        webotIframe.contentWindow.document;
+    iframeDocument.querySelector('#avatarImage').style.display = 'block' ;
+
+    var webotAvatarA = iframeDocument.querySelector("a.webot-avatar");
+    if(webotAvatarA){
+        webotAvatarA.style.display = "block"
+    }
+
+}
+
+
+window.minimizeWebotChatBox = function(botId){
+    let webotIframe = document.querySelector('#webot-widget-iframe-'+ botId);
+
+    webotIframe.style.height = '40px';
+    webotIframe.style.width = '250px';
+    webotIframe.style.boxShadow = "rgba(0, 0, 0, 0.1) 0px 10px 50px";
+    // webotIframe.style.borderRadius = "12px";
+	webotIframe.style.position = 'fixed'
+	webotIframe.style.bottom = '0px'
+
+    if ("ontouchstart" in document.documentElement){
+       	webotIframe.style.removeProperty('top')
+       	webotIframe.style.removeProperty('left')
+    }
+
+    var iframeDocument =
+        webotIframe.contentDocument ||
+        webotIframe.contentWindow.document;
+    let minimizeBadge = iframeDocument.querySelector('#minimizedBadge')
+	minimizeBadge.style.display = 'block'
+	iframeDocument.querySelector('#mainBox').style.display = 'none' ;
+    webotIframe.style.bottom = "10px";
+    webotIframe.style.borderBottomRightRadius = "0px";
+	webotIframe.classList.add('minimized-widget')
+
+}
+
+window.unMinimizeWeBotChatBox = function(botID) {
+	//console.log("UnMinimizing from parent")
+	const webotSettings = window.arkibot._globals.find(el => el.botId === botID)
+    let webotIframe = document.querySelector('#webot-widget-iframe-'+ botID);
+    var iframeDocument =
+        webotIframe.contentDocument ||
+        webotIframe.contentWindow.document;
+    iframeDocument.querySelector('#minimizedBadge').style.display = 'none'
+    iframeDocument.querySelector('#mainBox').style.display = 'flex' ;
+    webotIframe.style.right = window.AVATAR_RIGHT_PX ;
+	webotIframe.style.bottom = window.AVATAR_BOTTOM_PX ;
+
+	window.closeWebotChatBox(botID)
+	window.openWebotChatBox(botID)	
+}
+
+window.shortcodeOpenUrlBlank = function(url){
+  window.parent.parent.parent.open(url, '_blank')
+}
+
+window.shortcodeOpenUrl = function(url){
+  window.parent.parent.parent.open(url, '_blank')
+}
+
+function removeWebotScripts(botId) {
+    window.webotGlobal = null;
+    window.arkibot = null;
+    // delete iframe, webot style sheet, image view modal, origin file
+    removeElementFromHtmlById([
+        wbCustomElements.imageModal.styleSheetId,
+        wbCustomElements.imageModal.id,
+        wbCustomElements.iframe.id,
+        wbCustomElements.iframe.styleSheetId,
+    ]);
+    var originFile = document.querySelector("#webot-widget-iframe-"+ botId);
+    originFile && originFile.parentNode.removeChild(originFile);
+}
+
+function removeElementFromHtmlById(elementIdArray) {
+    for (var index in elementIdArray) {
+        var element = document.getElementById(elementIdArray[index]);
+        element && element.parentNode.removeChild(element);
+    }
+}
+function appendIframe() {
+	for(let i = 0; i < window.arkibot._globals.length; i++){
+		if(window.arkibot._globals.length > 1){
+			window.arkibot._globals[i].position = 'bottom-right-' + (window.arkibot._globals.length - i)
+		}
+		createWebotIframe(window.arkibot._globals[i]);
+		createCustomClasses(wbCustomIframe(window.arkibot._globals[i]));
+	}
+    // createWebotIframe();
+    // createCustomClasses(wbCustomIframe); // Add class to document
+}
+
+function isV1Script() {
+    return WEBOT_PLUGIN_VERSION === 'v1';
+}
+
+function createCustomClasses(classSettings) {
+    // Create custom classes
+    var style = document.createElement('style');
+    style.id = 'webot-style-sheet';
+    style.type = 'text/css';
+    style.innerHTML = classSettings;
+    document.getElementsByTagName('head')[0].appendChild(style);
+}
+
+// Create element iframe for webot widget
+function createWebotIframe(webotSettingsObject) {
+    if (document.getElementById(wbCustomElements.iframe.id)) {
+        throw new Error(
+            " Webot script is already loaded, please check if you're loading it more than once."
+        );
+    }
+
+	const botId = webotSettingsObject.botId
+
+	console.log('createWebotIframe' + webotSettingsObject.botId)
+	console.log(botId)
+
+    var webotIframe = document.createElement('iframe');
+    webotIframe.setAttribute('style', 'overflow:hidden;z-index: 999999999999999;'); // to fix scrollbars appearing before the chat widget loads on slow connections
+    webotIframe.setAttribute('scrolling', 'no'); // to fix scrollbars appearing before the chat widget loads on slow connections
+    webotIframe.setAttribute('id', 'webot-widget-iframe-' + botId);
+    webotIframe.setAttribute('title', 'Live chat');
+    webotIframe.setAttribute('name', 'Webot widget iframe');
+    webotIframe.setAttribute('class', 'webot-custom-iframe-' + botId);
+    webotIframe.setAttribute('data-protocol', window.location.protocol);
+    webotIframe.setAttribute('data-url', window.location.href);
+	webotIframe.setAttribute('data-settings', JSON.stringify(webotSettingsObject) );
+    document.body.appendChild(webotIframe);
+    var iframeDocument =
+        webotIframe.contentDocument ||
+        webotIframe.contentWindow.document;
+    webotIframe.contentWindow.arkibot = webotSettingsObject;
+
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        // Do Firefox-related activities
+        var testClick = window.document.getElementById(
+            'webot-widget-iframe-' + botId 
+        );
+        testClick.onload = function () {
+            injectLibraries(webotSettingsObject);
+        };
+    } else {
+        window.setTimeout(function () {
+            injectLibraries(webotSettingsObject);
+        }, 500);
+    }
+}
+
+function addWebotPluginToIframe(botId) {
+    // Add webot plugin inside iframe
+    var addableWindow, addableDocument;
+    if (isV1Script()) {
+        addableWindow = window;
+        addableDocument = document;
+    } else {
+        var webotIframe = window.document.getElementById(
+            'webot-widget-iframe-' + botId
+        );
+        var iframeDocument =
+            webotIframe.contentDocument ||
+            webotIframe.contentWindow.document;
+        addableWindow = webotIframe.contentWindow;
+        addableDocument = iframeDocument;
+    }
+    addableWindow.applozic =
+        (isV1Script()
+            ? addableWindow.arkibot
+            : webotIframe.contentWindow.arkibot) || {};
+    var options = {};
+    var options = addableWindow.applozic;
+    options.isAnonymousChat = options.isAnonymousChat;
+    options.WEBOT_VER = WEBOT_PLUGIN_VERSION;
+    if (typeof options !== 'undefined') {
+        addableWindow.MCK_ONINIT = options.onInit;
+    }
+	
+    addableWindow.addEventListener(
+        'error',
+        function (e) {
+            // TODO: Log to Sentry or similar...
+            console.log('Error ocurred:' + e)
+         },
+        true
+    );
+
+    var importedAxios = addableDocument.createElement('script');
+    importedAxios.async = false;
+    importedAxios.type = 'text/javascript';
+    importedAxios.src = "https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js";
+    importedAxios.crossorigin = 'anonymous'
+    importedAxios.referrerpolicy = 'no-referrer'
+
+    addableDocument.head.appendChild(importedAxios);
+
+
+
+    if (importedAxios.readyState) {
+        // IE
+        importedAxios.onreadystatechange = function () {
+            if (
+                importedAxios.readyState === 'loaded' ||
+                importedAxios.readyState === 'complete'
+            ) {
+                    var imported = addableDocument.createElement('script');
+				    imported.async = false;
+				    imported.type = 'text/javascript';
+				    imported.src = "https://chat.webempresa.eu/arkibot-production/widget-code.js?" +  Date.now()
+				    addableDocument.head.appendChild(imported);
+
+				    var importedStyle = addableDocument.createElement('link');
+				    importedStyle.rel = 'stylesheet'
+				    importedStyle.href = "https://chat.webempresa.eu/arkibot-production/widget-style.css?" +  Date.now()
+				    addableDocument.head.appendChild(importedStyle);
+            }
+        };
+    } else {
+        // Others
+        importedAxios.onload = function () {
+                var imported = addableDocument.createElement('script');
+			    imported.async = false;
+			    imported.type = 'text/javascript';
+			    imported.src = "https://chat.webempresa.eu/arkibot-production/widget-code.js?" +  Date.now()
+			    addableDocument.head.appendChild(imported);
+
+			    var importedStyle = addableDocument.createElement('link');
+			    importedStyle.rel = 'stylesheet'
+			    importedStyle.href = "https://chat.webempresa.eu/arkibot-production/widget-style.css?" +  Date.now()
+			    addableDocument.head.appendChild(importedStyle);
+        };
+    }
+
+    addFullviewImageModal();
+
+}
+
+
+function injectLibraries(webotSettingsObject) {
+    const botId = webotSettingsObject.botId
+    var addableWindow, addableDocument;
+    if (isV1Script()) {
+        addableWindow = window;
+        addableDocument = document;
+    } else {
+        var webotIframe = window.document.getElementById(
+            'webot-widget-iframe-' + botId
+        );
+        var iframeDocument =
+            webotIframe.contentDocument ||
+            webotIframe.contentWindow.document;
+        addableWindow = webotIframe.contentWindow;
+        addableDocument = iframeDocument;
+		addableWindow.arkibot = webotSettingsObject
+    }
+    var head = addableDocument.getElementsByTagName('head')[0];
+    var script = addableDocument.createElement('script');
+    var scriptAxios = addableDocument.createElement('script');
+    script.async = false;
+    script.type = 'text/javascript';
+    scriptAxios.async = false;
+    scriptAxios.type = 'text/javascript';
+
+    // script.src = 'https://chat.webempresa.eu/webot/jquery-3.5.1.min.js';
+    //script.src = 'https://unpkg.com/vue@3';
+    script.src = 'https://unpkg.com/vue@3.2.47/dist/vue.global.prod.js';
+    if (script.readyState) {
+        // IE
+        script.onreadystatechange = function () {
+            if (
+                script.readyState === 'loaded' ||
+                script.readyState === 'complete'
+            ) {
+                addWebotPluginToIframe(botId);
+            }
+        };
+    } else {
+        // Others
+        script.onload = function () {
+            addWebotPluginToIframe(botId);
+        };
+    }
+    script.onerror = function (error) {
+        throw new Error('Error while loading Jquery file.');
+    };
+
+    head.appendChild(script);
+}
+
+/*
+                            <!-- ======================================= -->
+                            <!-- |       New image full view modal     | -->
+                            <!-- ======================================= -->
+*/
+
+//<----------------------------CODE BEGINS HERE---------------------------->
+function addFullviewImageModal() {
+	return;
+    var modalHtml =
+        '<span id="wb-fullscreen-image-modal-close" class="wb-fullscreen-image-modal-close">&times;</span>' +
+        '<img class="wb-fullscreen-image-modal-content" id="wb-fullscreen-image-modal-content" alt="View attachment in full screen">' +
+        '<div id="wb-fullscreen-image-modal-caption"></div>';
+
+    var addFullviewImageModalCss =
+        /* The Modal (background) */
+        '.wb-fullscreen-image-modal {' +
+        ' display: none; ' /* Hidden by default */ +
+        ' position: fixed;' /* Stay in place */ +
+        ' z-index: 100000000;' /* Sit on top */ +
+        ' padding-top: 100px;' /* Location of the box */ +
+        ' left: 0;' +
+        ' top: 0;' +
+        ' width: 100%;' /* Full width */ +
+        ' height: 100%;' /* Full height */ +
+        ' overflow: auto;' /* Enable scroll if needed */ +
+        ' background-color: rgb(0,0,0);' /* Fallback color */ +
+        ' background-color: rgba(0,0,0,0.9);' /* Black w/ opacity */ +
+        '}  \n ' +
+        /* Modal Content (image) */
+        '.wb-fullscreen-image-modal-content {' +
+        ' margin: auto;' +
+        ' display: block;' +
+        ' width: 80%;' +
+        ' max-width: 700px;' +
+        '}  \n ' +
+        /* Caption of Modal Image */
+        '#wb-fullscreen-image-modal-caption {' +
+        ' margin: auto;' +
+        ' display: block;' +
+        ' width: 80%;' +
+        ' max-width: 700px;' +
+        ' text-align: center;' +
+        ' color: #ccc;' +
+        ' padding: 10px 0;' +
+        ' height: 150px;' +
+        '}  \n ' +
+        /* Add Animation */
+        '.wb-fullscreen-image-modal-content, #caption {' +
+        ' -webkit-animation-name: km-zoom;' +
+        ' -webkit-animation-duration: 0.6s;' +
+        ' animation-name: km-zoom;' +
+        ' animation-duration: 0.6s;' +
+        '}  \n ' +
+        '@-webkit-keyframes km-zoom {' +
+        ' from {-webkit-transform:scale(0)}' +
+        ' to {-webkit-transform:scale(1)}' +
+        '}  \n ' +
+        '@keyframes km-zoom {' +
+        ' from {transform:scale(0)}' +
+        ' to {transform:scale(1)}' +
+        '}  \n ' +
+        /* The Close Button */
+        '.wb-fullscreen-image-modal-close {' +
+        ' position: absolute;' +
+        ' top: 15px;' +
+        ' right: 35px;' +
+        ' color: #f1f1f1;' +
+        ' font-size: 40px;' +
+        ' font-weight: bold;' +
+        ' transition: 0.3s;' +
+        '}  \n ' +
+        '.wb-fullscreen-image-modal-close:hover,.wb-fullscreen-image-modal-close:focus {' +
+        '  color: #bbb;' +
+        '  text-decoration: none;' +
+        '  cursor: pointer;' +
+        '}  \n ' +
+        /* 100% Image Width on Smaller Screens */
+        '@media only screen and (max-width: 700px){' +
+        ' .wb-fullscreen-image-modal-content {' +
+        '   width: 100%;' +
+        ' }' +
+        '}  \n ';
+
+    // Append HTML of image fullview viewer modal to body of html page
+    var fullscreenModal = document.createElement('div');
+    fullscreenModal.setAttribute('id', 'wb-fullscreen-image-modal');
+    fullscreenModal.setAttribute('class', 'wb-fullscreen-image-modal');
+    fullscreenModal.innerHTML = modalHtml;
+    document.body.appendChild(fullscreenModal);
+
+    // Append CSS of image fullview viewer modal to body of html page
+    var style = document.createElement('style');
+    style.id = 'wb-fullscreen-image-modal-style-sheet';
+    style.type = 'text/css';
+    style.innerHTML = addFullviewImageModalCss;
+    document.getElementsByTagName('head')[0].appendChild(style);
+}
+//<----------------------------CODE ENDS HERE---------------------------->
+

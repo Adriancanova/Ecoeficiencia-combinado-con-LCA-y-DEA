@@ -1,0 +1,95 @@
+---
+title: Evaluación de ecoeficiencia en cafetales de Veracruz
+subtitle: Análisis combinado de LCA + DEA
+author:
+  - name: Adrian Canova Herrandiz
+    email: adriancanova434@gmail.com
+    orcid: 0000-0001-6882-6149
+    affiliations:
+      - name: Estudiante Maestría en Ciencias Agropecuarias, Universidad Veracruzana. Facultad de Ciencias Agrícolas. Xalapa-Enríquez, Veracruz, México
+abstract: |
+ Este estudio evaluó la ecoeficiencia en la producción de café en Veracruz, buscando la mejora de sus recursos y reducción de los costos mediante las mejores prácticas. El café, un ritual global, conecta a millones diariamente. Proveniente de la familia Rubiaceae, el cafeto prospera en condiciones tropicales específicas, a altitudes de 500 a 1,800 m. Sus cerezas vibrantes se transforman en granos tras un proceso meticuloso. En México, 12 estados, incluidos Chiapas, Veracruz y Oaxaca, cultivan café, principalmente por 25 millones de pequeños productores. Las hojas perennes y flores con aroma a jazmín del cafeto resaltan su encanto. Este trabajo promoverá la sostenibilidad en el sector cafetalero de Veracruz, adaptándose a su contexto socioeconómico y ambiental único.  
+thanks: |
+  Investigación desarrollada por estudios de Maestría en Ciencias Agropecuarias de la UV, apoyo de SECIHTI.
+keywords:
+  - Producción de café
+  - Análisis de ciclo de vida
+  - Análisis envolvente de datos
+  - Ecoeficiencia
+date: today
+date-format: full
+bibliography: references.bib
+format:
+  html: default
+  docx: default
+  academic-typst:
+    section-numbering: "1.1.1"
+execute:
+  echo: false
+---
+
+# **Café: una bebida que une al mundo**
+
+El café es mucho más que una bebida para despertar por las mañanas; es un ritual diario que une a millones de personas en todo el mundo. Con su aroma cálido y su sabor único, esta bebida ha acompañado a la humanidad durante siglos, desde pequeños momentos de calma hasta grandes encuentros sociales. Pero, ¿cómo pasó de ser una semilla desconocida a convertirse en un ícono global?
+
+![](/posts/Imagenes%20ok/tarea%20pizza/1%20corazon%20de%20cafe.jpeg){fig-align="center"}
+
+Nacido en las tierras altas de Etiopía, el café ha recorrido un largo camino, tejiendo historias y tradiciones en cada rincón del planeta. En este blog, te llevaremos a explorar los orígenes del café, su rica historia y el impacto que sigue teniendo en nuestras vidas hoy en día.
+
+![](/posts/Imagenes%20ok/tarea%20pizza/2%20etiopia%20origen%20cafe.jpeg){fig-align="center"}
+
+## El fascinante mundo del café
+
+El café es mucho más que una bebida matutina; es una planta llena de historia y curiosidades. Conocido como cafeto, pertenece a la familia de las rubiáceas, un grupo de árboles y arbustos. La palabra "café" no solo se refiere a la planta, sino también a sus semillas (los granos) y a la bebida que tanto disfrutamos.
+
+![](/posts/Imagenes%20ok/tarea%20pizza/3%20cafe%20como%20matutino.jpeg){fig-align="center" width="353"}
+
+### **¿Dónde crece el café? El hogar del cafeto**
+
+El cafeto, el árbol que nos regala el café, es una planta exigente que necesita condiciones muy específicas para crecer. Le encanta el clima cálido con abundante agua, pero también necesita un equilibrio: noches frescas con temperaturas que no bajen de 12°C. Estas condiciones perfectas se encuentran en el “cinturón del café”, una franja tropical alrededor del ecuador, entre los trópicos de Cáncer y Capricornio. El cafeto prospera en regiones frescas, con temperaturas entre 13 y 26°C. Necesita suelos ricos, húmedos y bien drenados, que absorban el agua pero eviten los encharcamientos. Estas condiciones se encuentran en muchas zonas tropicales y subtropicales del mundo, como América Latina, África y Asia [@paradamolina2020].
+
+![](/posts/Imagenes%20ok/tarea%20pizza/4%20cinturón%20del%20café.jpeg){fig-align="center" width="362"}
+
+Por eso, los cafetos prosperan en regiones como América Latina, África, Asia y Oceanía, donde el sol, la lluvia y el suelo se combinan para crear el entorno ideal. Estas zonas son el corazón del cultivo del café, produciendo los granos que disfrutamos en cada taza.
+
+## **El cafeto: un árbol lleno de vida**
+
+El cafeto es un árbol de hojas verdes brillantes que nunca se caen, lo que lo hace siempre frondoso. Sus flores blancas, con un aroma dulce parecido al jazmín, son muy especiales, pero también fugaces: solo duran entre 24 y 48 horas. En la naturaleza, un cafeto puede crecer hasta 6 metros de altura (o incluso 12 metros en el caso de la variedad Robusta). Sin embargo, en las plantaciones se poda a unos 3 metros para que los agricultores puedan recolectar sus frutos con facilidad [@informe2017].
+
+![](/posts/Imagenes%20ok/tarea%20pizza/5%20El%20cafeto%20un%20árbol%20lleno%20de%20vida.jpeg){fig-align="center" width="321"}
+
+# **De la flor al grano: el viaje de las cerezas de café**
+
+## Frutos del cafeto
+
+Los frutos del cafeto, llamados cerezas, son el corazón del proceso del café. Estas pequeñas bolitas pasan de ser verdes a tomar colores vibrantes como rojo, amarillo o naranja, dependiendo de la variedad. Cada cereza tarda entre 6 y 9 meses en madurar y, dentro de ella, se esconden dos granos de café, los que luego se tuestan y muelen para preparar la bebida.
+
+![](/posts/Imagenes%20ok/tarea%20pizza/6%20De%20la%20flor%20al%20grano%202.jpeg){fig-align="center" width="309"}
+
+El café no solo es una planta fascinante, sino también un cultivo que conecta a personas de todo el mundo. Desde el cuidado de los cafetos hasta la taza en tu mesa, cada grano cuenta una historia de naturaleza y esfuerzo humano.
+
+## **Principales regiones cafetaleras en México**
+
+Los caficultores en México provienen principalmente de 12 entidades: Chiapas, Veracruz, Puebla, Oaxaca, Guerrero, Hidalgo, San Luis Potosí, Tabasco, Jalisco, Nayarit, Colima y Edomex. Gracias a su arduo trabajo, México produce alrededor de 1 millón de toneladas de este delicioso y aromático grano cada año [@escamilla-prado2021].
+
+El café es una bebida que se obtiene mediante el percolado de agua caliente a través de los granos tostados y molidos de los frutos de la planta del café; es altamente estimulante por su contenido de cafeína, una sustancia psicoactiva. El café es, después del petróleo, el producto comercial más importante del mundo; supera al carbón, al trigo y al azúcar.
+
+![](/posts/Imagenes%20ok/tarea%20pizza/7%20cafeto%20del%20genero%20rubiaceas.jpg){fig-align="center"}
+
+Secretaría de Agricultura y Desarrollo Rural de México (2024).
+
+# **Variedades de granos de café**
+
+| variedades | contenido |
+|----|----|
+| Pluma | La variedad mexicana más reconocida internacionalmente, destacada por su aroma penetrante y distinguido |
+| Arábica | El primer grano cultivado a nivel mundial, de color verde intenso y bajo en cafeína |
+| Robusta | De sabor intenso y alto contenido de cafeína, es más fácil de cultivar y recolectar |
+| Criollo | Adaptado perfectamente al territorio mexicano, se cosecha bajo sombra y no resiste a vientos fuertes |
+| Maragogipe | Grano grande, suave y perfumado, originario de Brasil, con demanda en mercados especiales por su calidad |
+
+# **Informacion nutricional del café**
+
+El café (*Coffea arabica* L.), una de las bebidas más consumidas globalmente, es producido en un 80% por 25 millones de pequeños agricultores en regiones tropicales y subtropicales, a altitudes de 500 a 1,800 m. La producción mundial fluctúa anualmente debido a condiciones climáticas, plagas, enfermedades y otros factores, generando un mercado inestable con precios variables que afectan a quienes dependen de este cultivo [@leguizamo-sotelo2024].
+
+![](/posts/Imagenes%20ok/tarea%20pizza/8%20Información%20nutricional%20de%20cafe.jpg){fig-align="center" width="458"}

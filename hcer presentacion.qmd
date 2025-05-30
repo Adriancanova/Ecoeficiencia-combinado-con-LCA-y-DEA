@@ -1,0 +1,24 @@
+---
+title: "Hacer presentacion"
+author: Adrian Canova
+format: revealjs
+footer: "[inicio](../../index.html)"
+---
+
+## Evaluación de la ecoeficiencia en la producción de café mediante el uso combinado de Análisis de Ciclo de Vida y Análisis Envolvente de Datos
+
+## Principales problemas en la producción de café
+
+-   Mal manejo genético
+-   Cafetales viejos
+-   Deficiente fertilización
+
+## Baja densidad de siembra
+
+Mal manejo de la sombra y podas
+
+Afectación por plagas y enfermedades
+
+Poca asistencia técnica
+
+Deficiente manejo de arvenses

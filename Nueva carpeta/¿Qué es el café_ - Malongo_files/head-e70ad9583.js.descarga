@@ -1,0 +1,8 @@
+(function(){"use strict";var q=[],shim={},qfunc,shjq,shjqDone,ind;if(!window.jQuery){qfunc=function(f){q.push(f)}
+shim.ready=function(f){qfunc(f)}
+shjq=window.jQuery=window.$=function(arg){if(typeof arg=='function'){qfunc(arg)}
+return shim}
+window.checkJQ=function(){if(!shjqDone()){ind=setTimeout(checkJQ,100)}}
+ind=setTimeout(checkJQ,100);shjqDone=function(){if(window.jQuery!==shjq){clearTimeout(ind);var f=q.shift();while(f){jQuery(f);f=q.shift()}
+ind=shim=qfunc=shjq=shjqDone=window.checkJQ=null;return!0}
+return!1}}})()
