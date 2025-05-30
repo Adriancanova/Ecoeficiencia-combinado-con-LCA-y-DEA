@@ -2,7 +2,7 @@
 title: "Ecoeficiencia en cafetales"
 author: "Adrian Canova Herrandiz"
 date: "2025-03-07"
-categories: [news, code, analysis]
+categories: [impacto ambiental, café, productividad, cafetales]
 image: /posts/Ecoeficiencia/images/Ecoeficiencia 1.png
 bibliography: references.bib
 ---

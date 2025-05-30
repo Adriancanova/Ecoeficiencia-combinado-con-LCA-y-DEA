@@ -2,12 +2,21 @@
 title: "Análisis del ciclo de vida"
 author: "Adrian Canova Herrandiz"
 date: "2025-02-21"
-categories: [news]
-abstract: Algo
+categories: [impactos ambientales, ciclo de vida, materias primas]
+abstract: El Análisis del Ciclo de Vida (LCA, por sus siglas en inglés) es una metodología que evalúa los impactos ambientales de un producto o proceso a lo largo de toda su vida, desde la extracción de materias primas hasta su disposición final.
+bibliography: references.bib
 ---
 
-## El Análisis del Ciclo de Vida (LCA, por sus siglas en inglés) es una metodología que evalúa los impactos ambientales de un producto o proceso a lo largo de toda su vida, desde la extracción de materias primas hasta su disposición final.
+## 
 
 ## [liga](../../about.qmd)
 
 ## ![](/posts/Imagenes%20ok/LCA.png){width="482"}
+
+El Análisis Ciclo de Vida (LCA) es un método analítico empleado para la evaluación del uso, transformación, consumo y destino de los recursos. A nivel mundial, a través de las normas internacionales ISO 14040 e ISO 14044, esta herramienta se considera integral en la medición y direccionamiento de la carga ambiental y la huella ecológica asociadas con la fabricación de un producto, un proceso o actividad, desde la cuna hasta la tumba[@finkbeiner2006].
+
+En la agricultura, el LCA cuantifica indicadores como el consumo de agua, las emisiones de gases de efecto invernadero y la pérdida de biodiversidad [@notarnicola2017]. La metodología LCA permite medir el impacto ambiental de un producto desde la extracción de materias primas hasta su disposición final (ISO 14040, 2006). Por su parte, el DEA permite medir la eficiencia relativa de unidades productivas utilizando múltiples insumos y productos [@charnes1978].
+
+En la producción agrícola y otras áreas, los impactos ambientales se pueden medir mediante diversos indicadores a través del LCA. Esta metodología permite evaluar los impactos ambientales de un producto o proceso a lo largo de toda su cadena de suministro, lo que ha llevado a su amplia adopción, especialmente en el ámbito agrícola[@angulo-meza2019]. Uno de los principales problemas ambientales es el calentamiento global (Alvarado et al., 2023), cuyo impacto se evalúa en LCA mediante la Huella de Carbono (FC). Este indicador estima las emisiones totales de gases de efecto invernadero asociadas a un producto o actividad a lo largo de su ciclo de vida [@garcia-freites2020].
+
+Por su parte el Análisis de Ciclo de Vida es una técnica iterativa para evaluar la cadena de valor de un producto, servicio o sistema y conocer los posibles impactos asociados con su manufactura y consumo (Sarmiento, 2016). Es una herramienta poderosa para hacer comparaciones holísticas de los sistemas y para la correcta asignación de los recursos (Curran, 2017).
