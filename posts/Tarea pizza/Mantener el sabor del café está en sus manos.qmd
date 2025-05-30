@@ -1,6 +1,6 @@
 ---
-title: Evaluación de ecoeficiencia en cafetales de Veracruz
-subtitle: Análisis combinado de LCA + DEA
+title: El futuro del café en sus manos
+subtitle: Orígenes, características y producción de café
 author:
   - name: Adrian Canova Herrandiz
     email: adriancanova434@gmail.com
@@ -12,10 +12,10 @@ abstract: |
 thanks: |
   Investigación desarrollada por estudios de Maestría en Ciencias Agropecuarias de la UV, apoyo de SECIHTI.
 keywords:
-  - Producción de café
-  - Análisis de ciclo de vida
-  - Análisis envolvente de datos
-  - Ecoeficiencia
+  - Regiones cafetaleras 
+  - Orígenes del café
+  - Cinturón del café
+  - Variedades
 date: today
 date-format: full
 bibliography: references.bib
@@ -81,7 +81,7 @@ Secretaría de Agricultura y Desarrollo Rural de México (2024).
 # **Variedades de granos de café**
 
 | variedades | contenido |
-|----|----|
+|------------------------------------|------------------------------------|
 | Pluma | La variedad mexicana más reconocida internacionalmente, destacada por su aroma penetrante y distinguido |
 | Arábica | El primer grano cultivado a nivel mundial, de color verde intenso y bajo en cafeína |
 | Robusta | De sabor intenso y alto contenido de cafeína, es más fácil de cultivar y recolectar |

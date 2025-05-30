@@ -65,7 +65,7 @@ En este orden de ideas, la falta de un marco común que unifique los indicadores
 
 ![](images/9.jpeg){fig-align="center" width="316"}
 
-En Veracruz se pueden distinguir tres tipos de productores de café (Coffea arabica L.) pequeños productores o minifundistas, productores agrícolas o agroindustriales y productores secundarios, que son aquellos que no tienen como actividad principal el café. La gran mayoría de los productores son minifundistas y mantienen sus fincas como sistemas de policultivos y rústicos, el 93.5% de las fincas cafetaleras tienen una superficie menor a 3 ha.
+En Veracruz se pueden distinguir tres tipos de productores de café (Coffea arabica L.) pequeños productores o minifundistas, productores agrícolas o agroindustriales y productores secundarios, que son aquellos que no tienen como actividad principal el café. La gran mayoría de los productores son minifundistas y mantienen sus fincas como sistemas de policultivos y rústicos, el 93.5% de las fincas cafetaleras tienen una superficie menor a 3 ha[@venegassandoval2021].
 
 La medición de la eficiencia técnica mediante el DEA es crucial para evaluar el rendimiento de las DMU en el uso de recursos. Permite identificar las mejores prácticas y establecer una frontera de producción empírica, facilitando la comparación entre unidades homogéneas que en la presente investigación serán las fincas cafetaleras en la región de Veracruz.
 
