@@ -5,10 +5,9 @@ author: "Adrian Canova Herrandiz"
 date: "2025-05-30"
 categories: [eficiencia, Unidades de Toma de Decisiones, desempeño, entradas y salidas]
 abstract: El Análisis Envolvente de Datos (DEA, por sus siglas en inglés) es una técnica de optimización que mide la eficiencia de unidades productivas comparando sus insumos y productos.
+bibliography: references.bib
 ---
 
 ![](images/DEA 1-01.png){fig-align="center" width="450"}
 
-El Análisis Envolvente de Datos (DEA, por sus siglas en inglés) es una técnica de
-optimización que mide la eficiencia de unidades productivas comparando sus
-insumos y productos.
+El Análisis Envolvente de Datos es una técnica no paramétrica cuyas primeras aplicaciones se remontan a 1978 [@riañohenao2022]. Su origen se encuentra en la investigación doctoral de Rhodes, quien evaluaba la eficacia del programa de educación Follow-Through en las escuelas públicas de Estados Unidos. No obstante, el desarrollo de esta técnica no se debe exclusivamente a Rhodes. También es fundamental reconocer la contribución de Charnes, Cooper, Banker, Färe, Grosskopf, Seiford y Thrall, quienes desempeñaron un papel crucial en el desarrollo de los modelos matemáticos que sustentan el DEA [@taoumi2023].

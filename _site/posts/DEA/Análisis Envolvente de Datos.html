@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -168,11 +188,19 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/DEA 1-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
 </figure>
 </div>
-<p>El Análisis Envolvente de Datos (DEA, por sus siglas en inglés) es una técnica de optimización que mide la eficiencia de unidades productivas comparando sus insumos y productos.</p>
+<p>El Análisis Envolvente de Datos es una técnica no paramétrica cuyas primeras aplicaciones se remontan a 1978 <span class="citation" data-cites="riañohenao2022">(<a href="#ref-riañohenao2022" role="doc-biblioref">Riaño Henao and Larrea Serna 2022</a>)</span>. Su origen se encuentra en la investigación doctoral de Rhodes, quien evaluaba la eficacia del programa de educación Follow-Through en las escuelas públicas de Estados Unidos. No obstante, el desarrollo de esta técnica no se debe exclusivamente a Rhodes. También es fundamental reconocer la contribución de Charnes, Cooper, Banker, Färe, Grosskopf, Seiford y Thrall, quienes desempeñaron un papel crucial en el desarrollo de los modelos matemáticos que sustentan el DEA <span class="citation" data-cites="taoumi2023">(<a href="#ref-taoumi2023" role="doc-biblioref">Taoumi and Lahrech 2023</a>)</span>.</p>
 
 
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-riañohenao2022" class="csl-entry" role="listitem">
+Riaño Henao, Camilo Andrés, and Olga Lucía Larrea Serna. 2022. <span>“Análisis Envolvente de Datos y Sus Aplicaciones En Sostenibilidad.”</span> <em>Ingeniare</em>, no. 31 (July). <a href="https://doi.org/10.18041/1909-2458/ingeniare.31.8934">https://doi.org/10.18041/1909-2458/ingeniare.31.8934</a>.
+</div>
+<div id="ref-taoumi2023" class="csl-entry" role="listitem">
+Taoumi, Hamza, and Khadija Lahrech. 2023. <span>“Economic, Environmental and Social Efficiency and Effectiveness Development in the Sustainable Crop Agricultural Sector: A Systematic in-Depth Analysis Review.”</span> <em>Science of The Total Environment</em> 901 (November): 165761. <a href="https://doi.org/10.1016/j.scitotenv.2023.165761">https://doi.org/10.1016/j.scitotenv.2023.165761</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
