@@ -47,7 +47,7 @@ Existen diferentes metodologías para la integración de LCA, de acuerdo con [@v
 
 ![](images/clipboard-884285223.png){fig-align="center"}
 
-En esta oportunidad se resalta para el contexto actual de Veracruz, la Metodología LCA+DEA con el método de cuatro pasos
+En esta oportunidad se resalta para el contexto actual de Veracruz, la Metodología LCA+DEA con el método de cuatro pasos.
 
 ![](images/clipboard-279282128.png){fig-align="center"}
 
@@ -57,9 +57,7 @@ En esta oportunidad se resalta para el contexto actual de Veracruz, la Metodolog
 
 -   Enfoque de Cuna a Tumba: Considera toda la vida del producto, incluyendo su disposición final.
 
-```         
-![](images/LCA 3-01.png){width="474"}
-```
+![](images/LCA 3-01-01.png){fig-align="center" width="512"}
 
 ### **Tendencias Actuales**
 
@@ -69,29 +67,28 @@ En esta oportunidad se resalta para el contexto actual de Veracruz, la Metodolog
 
 -   Análisis de escenarios para la reducción de emisiones.
 
-```         
-**Limitaciones**
-```
+    **Limitaciones**
+
+<!-- -->
 
 -   Requiere datos detallados y a menudo difíciles de obtener.
 
 -   Puede ser costoso y complejo.
 
--   No siempre considera aspectos sociales
+-   No siempre considera aspectos sociales.
 
 **Principales Resultados**
 
 #### **Mundo**
 
 -   Implementación de LCA en certificaciones como Rainforest Alliance y Fair Trade.
-
-Reducción de emisiones en el procesamiento de café en Europa.
+-   Reducción de emisiones en el procesamiento de café en Europa.
 
 #### **América Latina**
 
 -   Estudios sobre huella hídrica y de carbono en Brasil y Colombia.
 
--   Optimización del uso de fertilizantes en cafetales peruanos
+-   Optimización del uso de fertilizantes en cafetales peruanos.
 
 #### **México**
 
