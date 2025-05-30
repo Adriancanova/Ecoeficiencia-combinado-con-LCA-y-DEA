@@ -57,7 +57,7 @@ En esta oportunidad se resalta para el contexto actual de Veracruz, la Metodolog
 
 -   Enfoque de Cuna a Tumba: Considera toda la vida del producto, incluyendo su disposición final.
 
-![](images/LCA 3-01-01.png){fig-align="center" width="512"}
+![](images/LCA%203-01-01.png){fig-align="center" width="512"}
 
 ### **Tendencias Actuales**
 

@@ -1,0 +1,14 @@
+---
+title: "Análisis Envolvente de Datos"
+format: html
+author: "Adrian Canova Herrandiz"
+date: "2025-05-30"
+categories: [eficiencia, Unidades de Toma de Decisiones, desempeño, entradas y salidas]
+abstract: El Análisis Envolvente de Datos (DEA, por sus siglas en inglés) es una técnica de optimización que mide la eficiencia de unidades productivas comparando sus insumos y productos.
+---
+
+![](images/DEA 1-01.png){fig-align="center" width="450"}
+
+El Análisis Envolvente de Datos (DEA, por sus siglas en inglés) es una técnica de
+optimización que mide la eficiencia de unidades productivas comparando sus
+insumos y productos.

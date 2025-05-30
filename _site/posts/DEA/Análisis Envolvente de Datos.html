@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Adrian Canova Herrandiz">
+<meta name="dcterms.date" content="2025-05-30">
 
-<title>Ecoeficiencia en cafetales – La Ecoeficiencia de México en una taza</title>
+<title>Análisis Envolvente de Datos – La Ecoeficiencia de México en una taza</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +68,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">La Ecoeficiencia de México en una taza</span>
     </a>
   </div>
@@ -149,7 +91,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item compact">
@@ -172,201 +114,65 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Ecoeficiencia en cafetales</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Análisis Envolvente de Datos</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">eficiencia</div>
+                <div class="quarto-category">Unidades de Toma de Decisiones</div>
+                <div class="quarto-category">desempeño</div>
+                <div class="quarto-category">entradas y salidas</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Adrian Canova Herrandiz </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 30, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
+  <div>
+    <div class="abstract">
+      <div class="block-title">Abstract</div>
+      El Análisis Envolvente de Datos (DEA, por sus siglas en inglés) es una técnica de optimización que mide la eficiencia de unidades productivas comparando sus insumos y productos.
+    </div>
+  </div>
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="VW5pZGFkZXMlMjBkZSUyMFRvbWElMjBkZSUyMERlY2lzaW9uZXM=">Unidades de Toma de Decisiones <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2FmZXRhbGVz">cafetales <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2FmJUMzJUE5">café <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2FyZ2ElMjBhbWJpZW50YWw=">carga ambiental <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2ljbG8lMjBkZSUyMHZpZGE=">ciclo de vida <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGVzZW1wZSVDMyVCMW8=">desempeño <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZWZpY2llbmNpYQ==">eficiencia <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZW50cmFkYXMlMjB5JTIwc2FsaWRhcw==">entradas y salidas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aHVlbGxhJTIwZWNvbCVDMyVCM2dpY2E=">huella ecológica <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW1wYWN0byUyMGFtYmllbnRhbA==">impacto ambiental <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW1wYWN0b3M=">impactos <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWF0ZXJpYXMlMjBwcmltYXM=">materias primas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJvZHVjdGl2aWRhZA==">productividad <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/DEA 1-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
+</div>
+<p>El Análisis Envolvente de Datos (DEA, por sus siglas en inglés) es una técnica de optimización que mide la eficiencia de unidades productivas comparando sus insumos y productos.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="ZWZpY2llbmNpYSUyQ1VuaWRhZGVzJTIwZGUlMjBUb21hJTIwZGUlMjBEZWNpc2lvbmVzJTJDZGVzZW1wZSVDMyVCMW8lMkNlbnRyYWRhcyUyMHklMjBzYWxpZGFz" data-listing-date-sort="1748584800000" data-listing-file-modified-sort="1748632222019" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
-<div class="thumbnail">
-<p><a href="./posts/DEA/Análisis Envolvente de Datos.html" class="no-external"></a></p><a href="./posts/DEA/Análisis Envolvente de Datos.html" class="no-external">
-<p class="card-img-top"><img src="posts\DEA\images\DEA 1-01.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/DEA/Análisis Envolvente de Datos.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/DEA/Análisis Envolvente de Datos.html" class="no-external">Análisis Envolvente de Datos</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/DEA/Análisis Envolvente de Datos.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ZWZpY2llbmNpYQ=='); return false;">
-eficiencia
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('VW5pZGFkZXMlMjBkZSUyMFRvbWElMjBkZSUyMERlY2lzaW9uZXM='); return false;">
-Unidades de Toma de Decisiones
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ZGVzZW1wZSVDMyVCMW8='); return false;">
-desempeño
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ZW50cmFkYXMlMjB5JTIwc2FsaWRhcw=='); return false;">
-entradas y salidas
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/DEA/Análisis Envolvente de Datos.html" class="no-external">El Análisis Envolvente de Datos (DEA, por sus siglas en inglés) es una técnica de optimización que mide la eficiencia de unidades productivas comparando sus insumos y productos.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/DEA/Análisis Envolvente de Datos.html" class="no-external">
-<div class="listing-date">
-May 30, 2025
-</div>
-<div class="listing-author">
-Adrian Canova Herrandiz
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1748584800000" data-listing-file-modified-sort="1748624968623" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="841">
-<div class="thumbnail">
-<p><a href="./posts/Tarea pizza/Mantener el sabor del café está en sus manos.html" class="no-external"></a></p><a href="./posts/Tarea pizza/Mantener el sabor del café está en sus manos.html" class="no-external">
-<p class="card-img-top"><img src="posts\Imagenes ok\tarea pizza\1 corazon de cafe.jpeg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/Tarea pizza/Mantener el sabor del café está en sus manos.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Tarea pizza/Mantener el sabor del café está en sus manos.html" class="no-external">El futuro del café en sus manos</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Tarea pizza/Mantener el sabor del café está en sus manos.html" class="no-external">Orígenes, características y producción de café</a>
-</div>
-<div class="listing-description">
-<a href="./posts/Tarea pizza/Mantener el sabor del café está en sus manos.html" class="no-external">Este estudio evaluó la ecoeficiencia en la producción de café en Veracruz, buscando la mejora de sus recursos y reducción de los costos mediante las mejores prácticas. El café, un ritual global, conecta a millones diariamente. Proveniente de la familia Rubiaceae, el cafeto prospera en condiciones tropicales específicas, a altitudes de 500 a 1,800 m. Sus cerezas vibrantes se transforman en granos tras un proceso meticuloso. En México, 12 estados, incluidos Chiapas, Veracruz y Oaxaca, cultivan café, principalmente por 25 millones de pequeños productores. Las hojas perennes y flores con aroma a jazmín del cafeto resaltan su encanto. Este trabajo promoverá la sostenibilidad en el sector cafetalero de Veracruz, adaptándose a su contexto socioeconómico y ambiental único. </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Tarea pizza/Mantener el sabor del café está en sus manos.html" class="no-external">
-<div class="listing-date">
-May 30, 2025
-</div>
-<div class="listing-author">
-Adrian Canova Herrandiz
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="aW1wYWN0byUyMGFtYmllbnRhbCUyQ2NhZiVDMyVBOSUyQ3Byb2R1Y3RpdmlkYWQlMkNjYWZldGFsZXM=" data-listing-date-sort="1741327200000" data-listing-file-modified-sort="1748627439081" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1611">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html" class="no-external"></a></p><a href="./posts/post-with-code/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/Ecoeficiencia/images/Ecoeficiencia 1.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-with-code/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Ecoeficiencia en cafetales</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-with-code/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('aW1wYWN0byUyMGFtYmllbnRhbA=='); return false;">
-impacto ambiental
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Y2FmJUMzJUE5'); return false;">
-café
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvZHVjdGl2aWRhZA=='); return false;">
-productividad
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Y2FmZXRhbGVz'); return false;">
-cafetales
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post-with-code/index.html" class="no-external">La ecoeficiencia es un enfoque que busca optimizar el uso de recursos en los sistemas productivos para reducir su impacto ambiental mientras se mantiene o mejora la…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Mar 7, 2025
-</div>
-<div class="listing-author">
-Adrian Canova Herrandiz
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="aW1wYWN0b3MlMkNjYXJnYSUyMGFtYmllbnRhbCUyQ2h1ZWxsYSUyMGVjb2wlQzMlQjNnaWNhJTJDY2ljbG8lMjBkZSUyMHZpZGElMkNtYXRlcmlhcyUyMHByaW1hcw==" data-listing-date-sort="1740117600000" data-listing-file-modified-sort="1748632175786" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="906">
-<div class="thumbnail">
-<p><a href="./posts/LCA/index.html" class="no-external"></a></p><a href="./posts/LCA/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\Imagenes ok\LCA.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/LCA/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/LCA/index.html" class="no-external">Análisis del ciclo de vida</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/LCA/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('aW1wYWN0b3M='); return false;">
-impactos
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Y2FyZ2ElMjBhbWJpZW50YWw='); return false;">
-carga ambiental
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('aHVlbGxhJTIwZWNvbCVDMyVCM2dpY2E='); return false;">
-huella ecológica
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Y2ljbG8lMjBkZSUyMHZpZGE='); return false;">
-ciclo de vida
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0ZXJpYXMlMjBwcmltYXM='); return false;">
-materias primas
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/LCA/index.html" class="no-external">El Análisis del Ciclo de Vida (LCA, por sus siglas en inglés) es una metodología que evalúa los impactos ambientales de un producto o proceso a lo largo de toda su vida, desde la extracción de materias primas hasta su disposición final.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/LCA/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-<div class="listing-author">
-Adrian Canova Herrandiz
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
