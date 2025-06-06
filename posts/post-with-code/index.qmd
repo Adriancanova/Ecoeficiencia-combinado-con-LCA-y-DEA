@@ -3,8 +3,7 @@ title: "Ecoeficiencia en cafetales"
 author: "Adrian Canova Herrandiz"
 date: "2025-03-07"
 categories: [impacto ambiental, café, productividad, cafetales]
-image: /posts/Ecoeficiencia/images/Ecoeficiencia 1.png
-bibliography: references.bib
+image: images/imagen-para-ventana-principal.png
 ---
 
 La ecoeficiencia es un enfoque que busca optimizar el uso de recursos en los sistemas productivos para reducir su impacto ambiental mientras se mantiene o mejora la productividad. En cafetales, la ecoeficiencia implica estrategias para minimizar el uso de insumos y reducir residuos sin comprometer la calidad del café.
