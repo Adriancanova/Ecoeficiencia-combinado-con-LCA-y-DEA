@@ -8,9 +8,7 @@ abstract: El Análisis Envolvente de Datos (DEA, por sus siglas en inglés) es u
 bibliography: references.bib
 ---
 
-![](images/DEA%201-01.png){fig-align="center" width="450"}
-
-El Análisis Envolvente de Datos es una técnica no paramétrica cuyas primeras aplicaciones se remontan a 1978 [@riañohenao2022]. Su origen se encuentra en la investigación doctoral de Rhodes, quien evaluaba la eficacia del programa de educación Follow-Through en las escuelas públicas de Estados Unidos. No obstante, el desarrollo de esta técnica no se debe exclusivamente a Rhodes. También es fundamental reconocer la contribución de Charnes, Cooper, Banker, Färe, Grosskopf, Seiford y Thrall, quienes desempeñaron un papel crucial en el desarrollo de los modelos matemáticos que sustentan el DEA [@taoumi2023].
+![](images/arbol de cafe NUEVO 2.png.jpg){width="503"}El Análisis Envolvente de Datos es una técnica no paramétrica cuyas primeras aplicaciones se remontan a 1978 [@riañohenao2022]. Su origen se encuentra en la investigación doctoral de Rhodes, quien evaluaba la eficacia del programa de educación Follow-Through en las escuelas públicas de Estados Unidos. No obstante, el desarrollo de esta técnica no se debe exclusivamente a Rhodes. También es fundamental reconocer la contribución de Charnes, Cooper, Banker, Färe, Grosskopf, Seiford y Thrall, quienes desempeñaron un papel crucial en el desarrollo de los modelos matemáticos que sustentan el DEA [@taoumi2023].
 
 Los métodos de selección de variables persiguen, primordialmente, ordenar un conjunto de variables (inputs y outputs) definidas para evaluar a las Unidades de Toma de Decisiones (DMUs) usando modelos DEA, con el propósito de seleccionar un número restringido de variables, a manera de mantener la relación causal en los modelos y que éstos indiquen adecuadamente el desempeño de las DMUs evaluadas [@peças2019].
 
