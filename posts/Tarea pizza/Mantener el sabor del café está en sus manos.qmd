@@ -81,7 +81,7 @@ Secretaría de Agricultura y Desarrollo Rural de México (2024).
 # **Variedades de granos de café**
 
 | variedades | contenido |
-|------------------------------------|------------------------------------|
+|----|----|
 | Pluma | La variedad mexicana más reconocida internacionalmente, destacada por su aroma penetrante y distinguido |
 | Arábica | El primer grano cultivado a nivel mundial, de color verde intenso y bajo en cafeína |
 | Robusta | De sabor intenso y alto contenido de cafeína, es más fácil de cultivar y recolectar |
