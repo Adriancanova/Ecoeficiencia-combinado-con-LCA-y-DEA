@@ -8,15 +8,13 @@ abstract: El Análisis Envolvente de Datos (DEA, por sus siglas en inglés) es u
 bibliography: references.bib
 ---
 
-![](images/DEA 1-01.png){fig-align="center" width="450"}
+![](images/DEA%201-01.png){fig-align="center" width="450"}
 
 El Análisis Envolvente de Datos es una técnica no paramétrica cuyas primeras aplicaciones se remontan a 1978 [@riañohenao2022]. Su origen se encuentra en la investigación doctoral de Rhodes, quien evaluaba la eficacia del programa de educación Follow-Through en las escuelas públicas de Estados Unidos. No obstante, el desarrollo de esta técnica no se debe exclusivamente a Rhodes. También es fundamental reconocer la contribución de Charnes, Cooper, Banker, Färe, Grosskopf, Seiford y Thrall, quienes desempeñaron un papel crucial en el desarrollo de los modelos matemáticos que sustentan el DEA [@taoumi2023].
 
 Los métodos de selección de variables persiguen, primordialmente, ordenar un conjunto de variables (inputs y outputs) definidas para evaluar a las Unidades de Toma de Decisiones (DMUs) usando modelos DEA, con el propósito de seleccionar un número restringido de variables, a manera de mantener la relación causal en los modelos y que éstos indiquen adecuadamente el desempeño de las DMUs evaluadas [@peças2019].
 
-El DEA es una técnica no paramétrica que permite evaluar la eficiencia de los
-productores de café al analizar los recursos empleados y los resultados
-obtenidos, especialmente en situaciones con múltiples entradas y salidas [@riañohenao2022a].
+El DEA es una técnica no paramétrica que permite evaluar la eficiencia de los productores de café al analizar los recursos empleados y los resultados obtenidos, especialmente en situaciones con múltiples entradas y salidas [@riañohenao2022a].
 
 ![](images/clipboard-2180538028.png){fig-align="center"}
 
@@ -32,15 +30,52 @@ Por su parte, el uso del DEA en la cafeticultura permite analizar la eficiencia 
 
 La eficiencia técnica se centra en maximizar la producción utilizando un conjunto fijo de insumos, sin tener en cuenta los costos ni las externalidades ambientales [@harya2024]. Se refiere a la capacidad de un sistema productivo para generar la mayor cantidad posible de producto con la mínima utilización de recursos, optimizando los procesos técnicos. Este enfoque prioriza el rendimiento productivo, ignorando aspectos financieros o impactos ecológicos.
 
-La eficiencia económica se centra en maximizar la rentabilidad mediante la
-optimización de la relación entre costos y beneficios [@bhat2022].
-Evalúa el uso de recursos desde una perspectiva monetaria, buscando generar el mayor ingreso posible con los menores costos de producción. Este enfoque
-prioriza la viabilidad financiera, asegurando que las decisiones de gestión
-resulten en un equilibrio óptimo entre los recursos invertidos y los retornos
-obtenidos.
+La eficiencia económica se centra en maximizar la rentabilidad mediante la optimización de la relación entre costos y beneficios [@bhat2022]. Evalúa el uso de recursos desde una perspectiva monetaria, buscando generar el mayor ingreso posible con los menores costos de producción. Este enfoque prioriza la viabilidad financiera, asegurando que las decisiones de gestión resulten en un equilibrio óptimo entre los recursos invertidos y los retornos obtenidos.
 
 En contraste, la ecoeficiencia incorpora el impacto ambiental como un criterio central, evaluando simultáneamente la productividad, los costos y las externalidades entre ellas las emisiones de carbono o la pérdida de biodiversidad [@cardoso2024]. Esta integración holística distingue a la ecoeficiencia dado que es un enfoque más completo para la sostenibilidad.
 
 La ecoeficiencia trasciende las nociones tradicionales de eficiencia al exigir un equilibrio ético entre el bienestar humano y la conservación del capital natural, un aspecto que debería guiar las políticas agrícolas globales.
 
 Así, la ecoeficiencia busca producir más con pocos recursos y menos daño ambiental. Mientras la eficiencia técnica y económica se enfocan en desempeño físico o financiero, la ecoeficiencia añade una dimensión ecológica. Por ello se plantea que la ecoeficiencia es clave en sistemas sostenibles, como los agrícolas dado que aporta una mirada distinta sobre el uso eficiente de los recursos.
+
+Experiencias en México, Colombia y Costa Rica ilustran el potencial de la ecoeficiencia. Para el caso de México, según la [@verdugomorales2025] reportaron que los cafetales bajo sombra en Chiapas, que integran árboles nativos, aumentaron la biodiversidad en un 20% y redujeron el uso de agroquímicos en un 30%.
+
+Del análisis en Colombia, la Federación Nacional de Cafeteros implementó un programa de café sostenible que mejoró los rendimientos en un 15% y disminuyó las emisiones en un 10% mediante la utilización de compost [@ferrucho2024].
+
+Otro hallazgo fue en Costa Rica, las certificaciones como Rainforest Alliance han permitido a los productores reducir el consumo de agua en un 25% y aumentar sus ingresos en un 12% [@rubio-jovel2024]. Sin embargo, la falta de metodologías estandarizadas y el acceso limitado a financiamiento restringen la escalabilidad de las iniciativas [@broeckhoven2025].
+
+Estas experiencias destacan la necesidad de integrar los conocimientos tradicionales de los productores, como el uso de cultivos intercalados, para enriquecer las estrategias ecoeficientes y garantizar su viabilidad a largo plazo.
+
+### **2. Características**
+
+-    **Método no paramétrico basado en programación matemática**: DEA utiliza técnicas de programación lineal para construir una frontera de eficiencia sin asumir una forma funcional específica para la relación entre insumos y productos. Esto significa que no requiere suposiciones previas sobre cómo los recursos se convierten en resultados, lo que lo hace adaptable a diferentes contextos, como fincas cafetaleras con diversas prácticas agrícolas, evitando sesgos derivados de modelos teóricos rígidos.
+
+-   **Permite comparar fincas cafetaleras sin necesidad de una función de producción predefinida**: A diferencia de otros métodos que dependen de una ecuación matemática preestablecida para modelar la producción, DEA evalúa la eficiencia comparando directamente las fincas según su desempeño real en términos de insumos utilizados y productos generados. Esto permite analizar fincas con características heterogéneas (tamaño, tecnología, tipo de café) de manera objetiva y sin imponer estructuras rígidas.
+
+-   **Identifica las unidades más eficientes y las que requieren mejoras**: DEA clasifica las fincas cafetaleras en eficientes e ineficientes al compararlas con una frontera de eficiencia construida a partir de las mejores prácticas observadas. Las fincas eficientes están en la frontera, mientras que las ineficientes se identifican con un puntaje que indica cuánto deben mejorar en el uso de insumos o en la producción para alcanzar la eficiencia, ofreciendo una guía clara para la optimización.
+
+-   **Flexibilidad en el manejo de múltiples insumos y productos**: DEA permite evaluar la eficiencia considerando simultáneamente múltiples insumos (como mano de obra, fertilizantes, agua) y productos (como cantidad de café cosechado o ingresos generados), sin necesidad de asignar pesos subjetivos a cada uno.
+
+-   **Orientación a la optimización**: DEA puede configurarse con diferentes orientaciones, como la minimización de insumos (lograr el mismo nivel de producción con menos recursos) o la maximización de productos (aumentar la producción con los mismos recursos), adaptándose a los objetivos específicos del análisis.
+
+-   **Identificación de referencias (benchmarks)**: DEA no solo señala las unidades ineficientes, sino que también identifica las unidades eficientes que sirven como referencia o "mejores prácticas" para las demás, proporcionando metas alcanzables y ejemplos prácticos de mejora.
+
+-   **Capacidad para incorporar restricciones contextuales**: DEA puede adaptarse para incluir restricciones específicas del entorno, como limitaciones ambientales, tecnológicas o económicas, lo que permite un análisis más realista y ajustado a las condiciones de las fincas cafetaleras.
+
+### **3. Metodologías Comunes**
+
+-   **Modelo CCR (Charnes, Cooper y Rhodes):** Asume rendimientos constantes a escala.
+
+Este modelo de DEA, desarrollado por Charnes, Cooper y Rhodes en 1978, asume rendimientos constantes a escala (CRS), lo que implica que un aumento proporcional en los insumos genera un aumento proporcional en los productos. Evalúa la eficiencia técnica global de unidades de decisión (como fincas cafetaleras) comparando insumos y productos para determinar cuáles operan en la frontera de eficiencia, sin considerar variaciones en la escala de operación.
+
+![](images/clipboard-2678037415.png){fig-align="center" width="405"}
+
+-    **Modelo BCC (Banker, Charnes y Cooper):** Considera rendimientos variables a escala.
+
+    Desarrollado por Banker, Charnes y Cooper en 1984, este modelo de DEA asume rendimientos variables a escala (VRS), reconociendo que el tamaño o escala de las unidades de decisión (como fincas cafetaleras) puede influir en su eficiencia. Evalúa la eficiencia técnica pura, separando los efectos de la gestión de los efectos de escala, permitiendo comparaciones más precisas entre unidades de diferentes tamaños.
+
+![](images/clipboard-3184457593.png){fig-align="center" width="408"}
+
+-    **Modelos orientados a insumos o productos:** Dependiendo de si se busca minimizar costos o maximizar producción.
+
+    **Modelos orientados a insumos o productos**: En el Análisis Envolvente de Datos (DEA), los modelos pueden orientarse hacia insumos o hacia productos, dependiendo del objetivo del análisis. La **orientación a insumos** se centra en minimizar los recursos utilizados (como mano de obra, fertilizantes o agua en fincas cafetaleras) para lograr un nivel dado de producción, siendo ideal para contextos donde se busca reducir costos o mejorar la eficiencia en el uso de recursos escasos. Por otro lado, la **orientación a productos** se enfoca en maximizar la producción (como la cantidad de café cosechado o ingresos generados) utilizando un nivel fijo de insumos, lo que es útil cuando el objetivo es aumentar los resultados sin incrementar los recursos. Ambos enfoques permiten adaptar el análisis a las prioridades específicas de las fincas, ya sea optimizando costos operativos o incrementando la productividad, y se implementan mediante programación lineal para identificar la frontera de eficiencia y las mejoras necesarias en cada caso.
