@@ -23,7 +23,7 @@ Figura 1. Cantidad de hectáreas por productores de café *Coffea arabica* L. (R
 
 ## Rendimientos de café
 
-![](images/clipboard-2187107802.png){width="502"}
+![](images/clipboard-2187107802.png){fig-align="center" width="533"}
 
 Figura 2. Rendimiento/ha de café cereza en Coatepec. (OBSERVACAFÉ, 2022)
 
