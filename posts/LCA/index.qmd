@@ -1,7 +1,8 @@
 ---
 title: "Análisis del ciclo de vida"
 author: "Adrian Canova Herrandiz"
-date: "2025-02-21"
+date: today
+date-format: full
 categories: [impactos, carga ambiental, huella ecológica, ciclo de vida, materias primas]
 abstract: El Análisis del Ciclo de Vida (LCA, por sus siglas en inglés) es una metodología que evalúa los impactos ambientales de un producto o proceso a lo largo de toda su vida, desde la extracción de materias primas hasta su disposición final.
 bibliography: references.bib
@@ -11,7 +12,7 @@ bibliography: references.bib
 
 ## [liga](../../about.qmd)
 
-## ![](/posts/Imagenes%20ok/LCA.png){width="529"}
+## ![](images/portada-01.png){width="441"}
 
 El Análisis Ciclo de Vida (LCA) es un método analítico empleado para la evaluación del uso, transformación, consumo y destino de los recursos. A nivel mundial, a través de las normas internacionales ISO 14040 e ISO 14044, esta herramienta se considera integral en la medición y direccionamiento de la carga ambiental y la huella ecológica asociadas con la fabricación de un producto, un proceso o actividad, desde la cuna hasta la tumba[@finkbeiner2006].
 

@@ -1,7 +1,8 @@
 ---
 title: "Ecoeficiencia en cafetales"
 author: "Adrian Canova Herrandiz"
-date: "2025-03-07"
+date: today
+date-format: full
 categories: [impacto ambiental, café, productividad, cafetales]
 image: images/imagen-para-ventana-principal.png
 ---
@@ -10,15 +11,15 @@ La ecoeficiencia es un enfoque que busca optimizar el uso de recursos en los sis
 
 Medir la eficiencia es crucial para optimizar el uso de recursos en cualquier sector, especialmente en el agropecuario, donde la maximización de la producción con insumos limitados puede tener un impacto significativo en la sostenibilidad económica y social[@cerveramuñoz2024].
 
-![](images/Ecoeficiencia%202.png){fig-align="center"}
+![](images/cafe%209%20viveros.jpeg){fig-align="center" width="505"}
 
 En México de acuerdo con Becerril [@becerril-torres2010], el sector agropecuario enfrenta varios desafíos, entre los cuales destacan el crecimiento poblacional y la variación en el consumo según el tipo de población, la incertidumbre en los mercados debido a fluctuaciones en los precios y la disponibilidad de alimentos, la competencia entre alimentos destinados al consumo humano y aquellos destinados a la producción de agrocombustibles, y la reducción en la disponibilidad de agua y de tierras para la actividad agropecuaria. Para abordar estos retos, es fundamental contar con un conocimiento más profundo del sector.
 
-![](images/Ecoeficiencia%203.png){fig-align="center"}
+![](images/cafe%206.jpeg){fig-align="center" width="249"}
 
 En este contexto la producción de café es un proceso complejo que involucra múltiples factores, desde la elección de variedades adecuadas hasta el manejo de plagas y enfermedades. La eficiencia en la producción se traduce en un uso óptimo de recursos, lo que no solo mejora la rentabilidad para los agricultores, sino que también contribuye a la sostenibilidad del ecosistema [@leguizamo-sotelo2024]. Medir la eficiencia permite identificar áreas de mejora, optimizar prácticas agrícolas y maximizar la calidad del café producido.
 
-![](images/Cafe%204.png){fig-align="center"}
+![](images/cafe%20personas%20trabajando.jpg){fig-align="center" width="502"}
 
 La Figura 1 muestra el árbol de problemas del sector cafetalero a nivel nacional en México según hallazgos [@gonzálezrazo2019] adaptado de varios autores. Se ilustran las diversas problemáticas que enfrenta la industria del café en México, incluyendo factores como uso excesivo de agua y agroquímicos, falta de prácticas de manejo, falta de asesorías, malas condiciones de suelos, cafetales envejecidos, entre otros que se agrupan en problemas productivos, comerciales y socioeconómicos. Estas dificultades generan desigualdades en la cadena productiva, afectando especialmente a los productores más vulnerables. La representación visual permite identificar las interconexiones entre los problemas y sus consecuencias en el sector.
 
@@ -32,7 +33,7 @@ La ausencia de un marco común que unifique indicadores de eficiencia productiva
 
 La evaluación de la ecoeficiencia en la producción de café (*Coffea arabica* L.) mediante el uso combinado de LCA+DEA ofrece una herramienta robusta y multidimensional para abordar tanto la eficiencia productiva, elementos financieros como los impactos ambientales. El DEA permite medir la eficiencia en el uso de recursos dentro de las fincas, mientras que el LCA proporciona una visión integral de los efectos ambientales a lo largo de todo el ciclo de vida del café, desde la siembra hasta la comercialización.
 
-![](images/7.jpeg){fig-align="center" width="399"}
+![](images/proceso%20de%20cultivo%20desde%20grano%20a%20cosecha.jpg){fig-align="center" width="361"}
 
 Al combinar ambos enfoques, es posible identificar no solo las fincas más productivas, sino también aquellas que minimizan su impacto ambiental, brindando así un análisis completo que facilita la toma de decisiones para mejorar la sostenibilidad en la producción cafetera. Esta metodología combinada representa una innovación en la evaluación de la ecoeficiencia agrícola, particularmente en el sector del café, al integrar aspectos productivos y ambientales en un solo marco de análisis.
 
@@ -58,11 +59,11 @@ Los factores relevantes en la relación del LCA+DEA y la sostenibilidad para las
 
 Otro aspecto clave de los problemas es la falta de metodologías adaptadas al contexto de la producción de café (*Coffea arabica* L.), lo que se dificulta al momento de tomar en cuenta la aplicación de herramientas como el LCA y el DEA en este sector. A pesar de su potencial, la combinación de estas dos metodologías es poco frecuente en investigaciones previas, especialmente en estudios agrícolas, lo que representa una brecha en el conocimiento.
 
-![](images/8.jpeg){width="392"}
+![](images/8.jpeg){fig-align="center" width="392"}
 
 En este orden de ideas, la falta de un marco común que unifique los indicadores de eficiencia productiva y los impactos ambientales específicos del café complica la evaluación precisa de la ecoeficiencia en este ámbito. Este problema plantea la necesidad de desarrollar una metodología que integre ambos enfoques LCA+DEA, adaptada a las condiciones locales, que permita generar resultados prácticos para la toma de decisiones en las fincas cafeteras y contribuir a la sostenibilidad del sector.
 
-![](images/9.jpeg){fig-align="center" width="316"}
+![](images/OIP%20(1).jpeg){fig-align="center" width="259"}
 
 En Veracruz se pueden distinguir tres tipos de productores de café (Coffea arabica L.) pequeños productores o minifundistas, productores agrícolas o agroindustriales y productores secundarios, que son aquellos que no tienen como actividad principal el café. La gran mayoría de los productores son minifundistas y mantienen sus fincas como sistemas de policultivos y rústicos, el 93.5% de las fincas cafetaleras tienen una superficie menor a 3 ha[@venegassandoval2021].
 
@@ -74,10 +75,10 @@ La necesidad de evaluar la ecoeficiencia en la producción agrícola se ha vuelt
 
 El Análisis de Ciclo de Vida es una metodología que evalúa los impactos ambientales de un producto desde su origen hasta su disposición final, ofreciendo una visión integral de los efectos de las actividades agrícolas. En la producción de café (*Coffea arabica* L.), el LCA permite identificar los puntos críticos en el proceso productivo que generan mayores impactos, como el uso de agua, energía y la emisión de gases de efecto invernadero. Combinando LCA con DEA, es posible no solo evaluar la eficiencia productiva de las fincas, sino también entender el impacto ambiental asociado a las prácticas agrícolas, proporcionando un enfoque más holístico de la ecoeficiencia. Esta combinación de herramientas es especialmente valiosa en la región cafetera, donde los desafíos ambientales y económicos requieren soluciones innovadoras que optimicen tanto la producción como la sostenibilidad.
 
-![](images/10.jpeg){fig-align="center" width="313"}
+![](images/de%20cosecha%20a%20bebida.png){fig-align="center"}
 
 Integrar LCA y DEA para evaluar la ecoeficiencia en la producción de café tiene un gran potencial para transformar las prácticas agrícolas en Veracruz y otras regiones cafeteras. Al combinar el análisis de eficiencia con la evaluación de los impactos ambientales, se pueden identificar las áreas en las que se puede mejorar el rendimiento productivo sin comprometer el bienestar ambiental. Esta metodología combinada no solo ayuda a las fincas a reducir costos y mejorar la competitividad, sino que también fomenta prácticas más responsables y alineadas con los principios de sostenibilidad. La propuesta de utilizar LCA+DEA ofrece una herramienta robusta y adaptada a las características específicas de la producción cafetera, permitiendo avanzar hacia un modelo más ecoeficiente y rentable.
 
-![](images/11.png){fig-align="center"}
+![](images/cafe%20fascinante.jpg){fig-align="center" width="349"}
 
 Por su parte, el DEA se utilizará para evaluar la eficiencia productiva en la región cafetalera de Veracruz. Se propone combinar LCA y DEA, lo cual permite no solo evaluar la eficiencia productiva, sino también los impactos ambientales, logrando una ecoeficiencia integral en la producción de café en Veracruz. La ecoeficiencia se emplea para medir la eficiencia en la producción de café en las fincas y se ofrecen recomendaciones prácticas para mejorarla, integrando criterios ambientales y económicos específicos de la región de Veracruz.

@@ -2,13 +2,16 @@
 title: "Análisis Envolvente de Datos"
 format: html
 author: "Adrian Canova Herrandiz"
-date: "2025-05-30"
+date: today
+date-format: full
 categories: [eficiencia, Unidades de Toma de Decisiones, desempeño, entradas y salidas]
 abstract: El Análisis Envolvente de Datos (DEA, por sus siglas en inglés) es una técnica de optimización que mide la eficiencia de unidades productivas comparando sus insumos y productos.
 bibliography: references.bib
 ---
 
-![](images/arbol de cafe NUEVO 2.png.jpg){width="503"}El Análisis Envolvente de Datos es una técnica no paramétrica cuyas primeras aplicaciones se remontan a 1978 [@riañohenao2022]. Su origen se encuentra en la investigación doctoral de Rhodes, quien evaluaba la eficacia del programa de educación Follow-Through en las escuelas públicas de Estados Unidos. No obstante, el desarrollo de esta técnica no se debe exclusivamente a Rhodes. También es fundamental reconocer la contribución de Charnes, Cooper, Banker, Färe, Grosskopf, Seiford y Thrall, quienes desempeñaron un papel crucial en el desarrollo de los modelos matemáticos que sustentan el DEA [@taoumi2023].
+![](images/arbol%20de%20cafe%20NUEVO%202.png.jpg){fig-align="center" width="465"}
+
+El Análisis Envolvente de Datos es una técnica no paramétrica cuyas primeras aplicaciones se remontan a 1978 [@riañohenao2022]. Su origen se encuentra en la investigación doctoral de Rhodes, quien evaluaba la eficacia del programa de educación Follow-Through en las escuelas públicas de Estados Unidos. No obstante, el desarrollo de esta técnica no se debe exclusivamente a Rhodes. También es fundamental reconocer la contribución de Charnes, Cooper, Banker, Färe, Grosskopf, Seiford y Thrall, quienes desempeñaron un papel crucial en el desarrollo de los modelos matemáticos que sustentan el DEA [@taoumi2023].
 
 Los métodos de selección de variables persiguen, primordialmente, ordenar un conjunto de variables (inputs y outputs) definidas para evaluar a las Unidades de Toma de Decisiones (DMUs) usando modelos DEA, con el propósito de seleccionar un número restringido de variables, a manera de mantener la relación causal en los modelos y que éstos indiquen adecuadamente el desempeño de las DMUs evaluadas [@peças2019].
 
@@ -35,6 +38,8 @@ En contraste, la ecoeficiencia incorpora el impacto ambiental como un criterio c
 La ecoeficiencia trasciende las nociones tradicionales de eficiencia al exigir un equilibrio ético entre el bienestar humano y la conservación del capital natural, un aspecto que debería guiar las políticas agrícolas globales.
 
 Así, la ecoeficiencia busca producir más con pocos recursos y menos daño ambiental. Mientras la eficiencia técnica y económica se enfocan en desempeño físico o financiero, la ecoeficiencia añade una dimensión ecológica. Por ello se plantea que la ecoeficiencia es clave en sistemas sostenibles, como los agrícolas dado que aporta una mirada distinta sobre el uso eficiente de los recursos.
+
+![](images/proceso%20de%20cafe%20en%20DEA.jpg){fig-align="center" width="482"}
 
 Experiencias en México, Colombia y Costa Rica ilustran el potencial de la ecoeficiencia. Para el caso de México, según la [@verdugomorales2025] reportaron que los cafetales bajo sombra en Chiapas, que integran árboles nativos, aumentaron la biodiversidad en un 20% y redujeron el uso de agroquímicos en un 30%.
 
@@ -149,5 +154,7 @@ Los hallazgos presentados por [@morandinahuerma2023] los cafeticultores mexicano
 -   **Sustentabilidad en la industria del café. Caffenio modelo de negocio.**
 
 Refiere [@navarrete-torres2025] que la marca Caffenio nació oficialmente en 2017, aunque sus orígenes datan de 1941, con la fundación del negocio ‘Café Combate’ en Hermosillo, Sonora, México. Es una de las franquicias de café en el noreste del país, que además de ofertar bebidas frías y calientes, son conocidos por la alianza que sostienen con la cadena comercial OXXO, S. A. de C. V., a través de la cual venden la marca “Andatti”. Es una empresa líder dedicada al desarrollo de productos y onceptos diferenciados para segmentos específicos de mercado. Desarrollan 5 divisiones de negocio: Centros de consumo, Tiendas de conveniencia, Barras de café, Cafeterías y Soluciones para autoservicios y mayoristas. Se propuso analizar la estrategia de sostenibilidad que se denomina Crece Caffenio, de la cual se deriva Cosecha, el programa que impulsa el apoyo a productores de café para que sus fincas sean más rentables. Se encontró que las innovaciones aplicadas en la empresa conducen a mejorar significativamente la productividad de las organizaciones. El programa es integral y abarca todos los aspectos de la operación de la empresa. Los resultados llevan a plantear que las innovaciones en los procesos de producción de las cadenas de suministro sostenible en la agroindustria tienen tendencia a consolidarse en el mercado. Por tanto, la adopción de este enfoque en el diseño de la estrategia de las empresas se ha convertido en eje de trabajo para la alta gerencia, que percibe en la sostenibilidad un elemento clave para la competitividad. Por lo anterior, el desarrollo y fortalecimiento de la importancia de la sostenibilidad enfocado en el pilar social, ambiental, económico y ético es clave para que exista una colaboración entre quienes participan en el proceso productivo.
+
+![](images/cafe%20y%20el%20mundo%20NUEVO.jpg){fig-align="center" width="486"}
 
 En regiones como Veracruz, México, esta perspectiva es especialmente pertinente, dado que la producción de café se caracteriza por una alta heterogeneidad en cuanto a tamaño de finca, sistemas de manejo y condiciones ecológicas[@beltrán-vargas2024]. Sin embargo, existe una escasez de estudios que apliquen este enfoque de manera localizada. Tal como señalan los autores anteriores, adaptar las metodologías de ecoeficiencia al contexto regional permite formular recomendaciones específicas para los productores y diseñar políticas públicas más efectivas en este sector.

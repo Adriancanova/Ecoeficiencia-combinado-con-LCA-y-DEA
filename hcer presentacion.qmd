@@ -1,24 +1,128 @@
 ---
-title: "Hacer presentacion"
-author: Adrian Canova
+title: "Presentación de avances de Maestría en Ciencias Agropecuarias"
+author: Adrian Canova Herrandiz
 format: revealjs
 footer: "[inicio](../../index.html)"
 ---
 
-## Evaluación de la ecoeficiencia en la producción de café mediante el uso combinado de Análisis de Ciclo de Vida y Análisis Envolvente de Datos
+## Título: Evaluación de la ecoeficiencia en cafetales de Veracruz
 
-## Principales problemas en la producción de café
+Director de tesis: Dr. Carlos Roberto Cerdán Cabrera
 
--   Mal manejo genético
--   Cafetales viejos
--   Deficiente fertilización
+Codirector: Dr. Ricardo Musule Lagunes
 
-## Baja densidad de siembra
+Asesor: Dr. Leonardo Vásquez Ibarra
 
-Mal manejo de la sombra y podas
+Asesor externo: Dr. Charles Staver
 
-Afectación por plagas y enfermedades
+## Antecedentes
 
-Poca asistencia técnica
+![](images/clipboard-290386324.png){fig-align="center" width="442"}
 
-Deficiente manejo de arvenses
+Figura 1. Cantidad de hectáreas por productores de café *Coffea arabica* L. (Ramírez *et al*. 2010)
+
+## Rendimientos de café
+
+![](images/clipboard-2187107802.png){width="502"}
+
+Figura 2. Rendimiento/ha de café cereza en Coatepec. (OBSERVACAFÉ, 2022)
+
+## Justificación
+
+![](images/clipboard-2549099903.png){fig-align="center" width="502"}
+
+Figura 3. Árbol de problemas del sector cafetalero a nivel nacional.
+
+Fuente: Higuera y Rivera (2018) adaptado de Escamilla (2018), OIC (2017), Medina et al. (2016), SIAP (2015).
+
+## Justificación
+
+![](images/clipboard-3636999772.png)
+
+## Justificación
+
+![](images/clipboard-4097049970.png)
+
+## Contexto
+
+![](images/clipboard-944287580.png)
+
+## Pregunta de investigación
+
+¿Cómo varía el nivel de ecoeficiencia de fincas cafetaleras en una microcuenca de la zona central Veracruz utilizando el Análisis de Ciclo de Vida y Análisis Envolvente de Datos?
+
+## Hipótesis
+
+Existen diferencias significativas en la ecoeficiencia entre fincas cafetaleras en una microcuenca de la zona central Veracruz, asociadas al desempeño ambiental (LCA) y la eficiencia técnica (DEA).
+
+## Objetivo general
+
+Evaluar la ecoeficiencia de fincas cafetaleras en una microcuenca de la zona central Veracruz mediante la aplicación combinada del Análisis de Ciclo de Vida y el Análisis Envolvente de Datos (DEA), con el fin de identificar buenas prácticas productivas y ambientales.
+
+## Objetivos particulares
+
+1.  Aplicar el Análisis de Ciclo de Vida para identificar el desempeño ambiental de las fincas cafetaleras.
+2.  Seleccionar las variables de entrada (insumos) y salida (rendimiento/productividad) aplicables al modelo DEA seleccionado.
+3.  Determinar la relación entre eficiencia y la productividad con la aplicación combinada del Análisis de Ciclo de Vida y el Análisis Envolvente de Datos.
+
+## Materiales y Métodos
+
+![](images/clipboard-1193199415.png){fig-align="center" width="531"}
+
+## Análisis estadístico
+
+![](images/clipboard-3750412681.png){width="517"}
+
+## Análisis estadístico
+
+Tabla 1. Combinación de correlación de Pearson y rangos de eficiencia.
+
+![](images/clipboard-1069326452.png){width="427"}
+
+Fuente: Elaboración propia.
+
+## Resultados
+
+![](images/clipboard-531702195.png)
+
+Figura 6. marco de referencia del Análisis de Ciclo de Vida.
+
+Fuente: Norma ISO 14040: 2006.
+
+## Resultados
+
+El Análisis envolvente de datos es una técnica no paramétrica que permite evaluar la eficiencia de los productores de café al analizar los recursos empleados y los resultados obtenidos (fincas), especialmente en situaciones con múltiples entradas y salidas (Riaño y Larrea, 2021).
+
+![](images/clipboard-1113368376.png){fig-align="center" width="485"}
+
+## Resultados
+
+Tabla 2. Variables de entradas
+
+![](images/clipboard-641555711.png){width="548"}
+
+Fuente: Elaboración propia
+
+## Resultados
+
+Tabla 3. Variables de salidas.
+
+![](images/clipboard-430604570.png){fig-align="center" width="601"}
+
+Fuente: Elaboración propia
+
+## Resultados
+
+![](images/clipboard-4259662953.png){fig-align="center" width="570"}
+
+Figura 5. Comparación entre los modelos CCR y BCC.
+
+Fuente: Cooper *et al*. (2007)
+
+## Resultados
+
+Metodología LCA+DEA: método de cuatro pasos.
+
+![](images/clipboard-3944769564.png){fig-align="center" width="548"}
+
+Fuente: Rebolledo-Leiva *et al*. (2017)

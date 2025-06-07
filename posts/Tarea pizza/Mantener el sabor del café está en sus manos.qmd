@@ -8,7 +8,7 @@ author:
     affiliations:
       - name: Estudiante Maestría en Ciencias Agropecuarias, Universidad Veracruzana. Facultad de Ciencias Agrícolas. Xalapa-Enríquez, Veracruz, México
 abstract: |
- Este estudio evaluó la ecoeficiencia en la producción de café en Veracruz, buscando la mejora de sus recursos y reducción de los costos mediante las mejores prácticas. El café, un ritual global, conecta a millones diariamente. Proveniente de la familia Rubiaceae, el cafeto prospera en condiciones tropicales específicas, a altitudes de 500 a 1,800 m. Sus cerezas vibrantes se transforman en granos tras un proceso meticuloso. En México, 12 estados, incluidos Chiapas, Veracruz y Oaxaca, cultivan café, principalmente por 25 millones de pequeños productores. Las hojas perennes y flores con aroma a jazmín del cafeto resaltan su encanto. Este trabajo promoverá la sostenibilidad en el sector cafetalero de Veracruz, adaptándose a su contexto socioeconómico y ambiental único.  
+ Este estudio evaluó la ecoeficiencia en la producción de café en Veracruz, buscando la mejora de sus recursos y reducción de los costos mediante las mejores prácticas. El café, un ritual global, conecta a millones diariamente. Proveniente de la familia Rubiaceae, el cafeto prospera en condiciones tropicales específicas, a altitudes de 500 a 1,800 m.   
 thanks: |
   Investigación desarrollada por estudios de Maestría en Ciencias Agropecuarias de la UV, apoyo de SECIHTI.
 keywords:
@@ -32,7 +32,7 @@ execute:
 
 El café es mucho más que una bebida para despertar por las mañanas; es un ritual diario que une a millones de personas en todo el mundo. Con su aroma cálido y su sabor único, esta bebida ha acompañado a la humanidad durante siglos, desde pequeños momentos de calma hasta grandes encuentros sociales. Pero, ¿cómo pasó de ser una semilla desconocida a convertirse en un ícono global?
 
-![](/posts/Imagenes%20ok/tarea%20pizza/1%20corazon%20de%20cafe.jpeg){fig-align="center"}
+![](images/cafe y el mundo NUEVO.jpg){fig-align="center" width="427"}
 
 Nacido en las tierras altas de Etiopía, el café ha recorrido un largo camino, tejiendo historias y tradiciones en cada rincón del planeta. En este blog, te llevaremos a explorar los orígenes del café, su rica historia y el impacto que sigue teniendo en nuestras vidas hoy en día.
 
@@ -78,18 +78,32 @@ El café es una bebida que se obtiene mediante el percolado de agua caliente a t
 
 Secretaría de Agricultura y Desarrollo Rural de México (2024).
 
+Sus cerezas vibrantes se transforman en granos tras un proceso meticuloso. En México, 12 estados, incluidos Chiapas, Veracruz y Oaxaca, cultivan café, principalmente por 25 millones de pequeños productores. Las hojas perennes y flores con aroma a jazmín del cafeto resaltan su encanto. Este trabajo promoverá la sostenibilidad en el sector cafetalero de Veracruz, adaptándose a su contexto socioeconómico y ambiental único.
+
+En México hay 15 estados productores de café; al sur del país, **Chiapas** es el principal estado productor, aporta **41.0%** del volumen nacional, seguido por **Veracruz** (24.0%) y **Puebla** (15.3%).
+
+En México, se cultivan mayormente los cultivares Typica, Bourbon, Caturra Rojo, Mundo Novo, Garnica y Caturra Amarillo, cuya producción promedio de frutos frescos de café (cereza) es inferior a siete sacos de café oro (menor a 2.0 t ha-1 de café cereza, equivalente a 8 qq ha-1), que son las unidades utilizadas en el comercio internacional de este producto [@escamilla-prado2021a].
+
 # **Variedades de granos de café**
 
 | variedades | contenido |
-|----|----|
+|------------------------------------|------------------------------------|
 | Pluma | La variedad mexicana más reconocida internacionalmente, destacada por su aroma penetrante y distinguido |
 | Arábica | El primer grano cultivado a nivel mundial, de color verde intenso y bajo en cafeína |
 | Robusta | De sabor intenso y alto contenido de cafeína, es más fácil de cultivar y recolectar |
 | Criollo | Adaptado perfectamente al territorio mexicano, se cosecha bajo sombra y no resiste a vientos fuertes |
 | Maragogipe | Grano grande, suave y perfumado, originario de Brasil, con demanda en mercados especiales por su calidad |
 
-# **Informacion nutricional del café**
+# **Información nutricional del café**
 
 El café (*Coffea arabica* L.), una de las bebidas más consumidas globalmente, es producido en un 80% por 25 millones de pequeños agricultores en regiones tropicales y subtropicales, a altitudes de 500 a 1,800 m. La producción mundial fluctúa anualmente debido a condiciones climáticas, plagas, enfermedades y otros factores, generando un mercado inestable con precios variables que afectan a quienes dependen de este cultivo [@leguizamo-sotelo2024].
 
 ![](/posts/Imagenes%20ok/tarea%20pizza/8%20Información%20nutricional%20de%20cafe.jpg){fig-align="center" width="458"}
+
+La cafeticultura, especialmente en regiones como América Latina, constituye una actividad socioeconómica clave que enfrenta múltiples desafíos relacionados con la sostenibilidad ambiental y la rentabilidad económica. En este contexto, aplicar el enfoque de ecoeficiencia a la producción de café resulta crucial para mejorar la competitividad del sector y mitigar los impactos negativos sobre los ecosistemas [@campostrigoso2021].
+
+Los sistemas cafetaleros enfrentan desafíos complejos que comprometen su sostenibilidad. Las plagas, como la roya del café, han reducido los rendimientos en un 50% en regiones de América Latina, incluyendo México [@avelino2015].
+
+![](images/corazon de cafe.jpeg){fig-align="center" width="414"}
+
+Los sistemas de cultivo de café, como el *Coffea arabica* L., requieren una gran cantidad de recursos, incluyendo agua, fertilizantes, mano de obra y energía, además de generar residuos orgánicos y emisiones de gases de efecto invernadero (GEI). De acuerdo con [@garcia-freites2020], prácticas como el uso intensivo de agroquímicos, la deforestación para expansión de cafetales y el manejo inadecuado de residuos contribuyen significativamente a la huella ecológica del cultivo. Ante este panorama, la evaluación de la ecoeficiencia permite identificar las prácticas más sostenibles y económicamente viables.

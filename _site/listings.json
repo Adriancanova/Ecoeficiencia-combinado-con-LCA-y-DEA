@@ -2,10 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/Tarea pizza/Mantener el sabor del café está en sus manos.html",
       "/posts/DEA/Análisis Envolvente de Datos.html",
+      "/posts/LCA/index.html",
       "/posts/post-with-code/index.html",
-      "/posts/LCA/index.html"
+      "/posts/Tarea pizza/Mantener el sabor del café está en sus manos.html"
     ]
   }
 ]
